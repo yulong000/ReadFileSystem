@@ -1,0 +1,1295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C15588E5F869E65DCAE586C7AFA6F5 /* NSImageView+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE274878A5D412529BCE9CDDD7F66DD /* NSImageView+Category.swift */; };
+		026E0D20A3AF00A040DE6F73C22B0A6A /* YLLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9839EC9386AE1AE2A0A6F6DA828D0B4D /* YLLog.swift */; };
+		062F318877589D014CBE042CD81E223A /* YLUpdateWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48E9758F5A8E42D5FA18D6BEBF518CB /* YLUpdateWindowController.swift */; };
+		06BBBB587E979426A033150267B08E05 /* YLAppRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F16A4FA0EDCC8C0304C6B55FEA8567E /* YLAppRating.swift */; };
+		081106FF1560EF7B1247632467C2020B /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A8622AA025B6F60FBAF8FCC8351454 /* Async.swift */; };
+		08CF7B9705ECC464B1F5EBCAFEC3D7FE /* YLTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4527ADD478AE027370593EF45BCBE /* YLTextField.swift */; };
+		0A1D1457DDA78F8EFF4570790A2630D4 /* NSControl+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31C7B716D61DA71E55D181AE244F39F /* NSControl+Category.swift */; };
+		0D2C62C5C01248BB6DE87423E3DB9EB0 /* YLPermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBA596C01915AF87F801C17FF09D36 /* YLPermissionManager.swift */; };
+		0E1FF4707EF9E1C13358F0C5E8DDF649 /* KeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E195899BEAF856DA0D54D28AA3DF0 /* KeyCode.swift */; };
+		134642C198D5CF4EAC8CA585E8795CF6 /* NSView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19811ED1BDAD000C3A29CF27BF27E876 /* NSView+Frame.swift */; };
+		1D9F14D5B34ED99DA9709F71BB5862B5 /* YLPermissionWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4422E9D18C50B000291C718F79CC5E /* YLPermissionWindowController.swift */; };
+		2109A76B4FE797E261261ABCB861A950 /* NSScreen+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9350DD7EDE9B724391DF19793DC13C9 /* NSScreen+Category.swift */; };
+		2146B2A508CACF73988B6B2AF18F8A3D /* NSWindow+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5639FEBE35964A186AE3B5E6EA100B /* NSWindow+Category.swift */; };
+		2822F15E981E86862A1EE9E0E2895182 /* YLTipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EBD6B4C5DDDAF6F38D458A92616616 /* YLTipButton.swift */; };
+		289630257E1052F44F8F3504EAC8306B /* YLShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96DB9B6322EC50A5D91FA4188905721 /* YLShortcut.swift */; };
+		28EC6C1C5738EEAE5169170BA5702253 /* NSObject+KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7DD20CD4DFBB1B25171128E11352D /* NSObject+KVO.swift */; };
+		2EC1ADD4126D72498CE9EF7FD2A8CDDF /* NSImage+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1134AEEFC28DA521DEFF7D2C73A43C4 /* NSImage+Category.swift */; };
+		2F59C2CA8E540227D1002AF9C58AEFED /* YLHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE277B9581BF2DB956D5BE89BBF1A42 /* YLHud.swift */; };
+		30E3FCD943892E0F035F26EC912D2636 /* String+Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD8C0D531AABBEACCBDDACBFD5F4ABA /* String+Secret.swift */; };
+		32E0128A58F589446847E61F9C2E1A6F /* YLUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E07DF0C1911318091C63180CA14A57 /* YLUserDefaults.swift */; };
+		38577C033F40756B2BBA9385CB18A0A9 /* NSView+SmoothCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AF1660E49D418B06DE4DF199BFE781 /* NSView+SmoothCorner.swift */; };
+		41B7B2797E8FFC216379D45AC6BA7E3A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14DC0F461B10E3E60887F23C87FEEC6 /* Event.swift */; };
+		431177104B24E1FEA24317741CA93F5D /* YLCFNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143BB945F428596AC659E0CB90F506D /* YLCFNotificationCenter.swift */; };
+		457EC9C917D996665B8B603B28191112 /* NSResponder+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96760DC35555E70BB84238CA08AE54D /* NSResponder+Category.swift */; };
+		498ECAA2CE6E834370BA77CFBCA2DD69 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C7734A86E2B234C6BB2AFAB17F7AC /* File.swift */; };
+		53C9DFEDEB23F0798CF8D7746DF43C21 /* YLWindowOperateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCF4F851E8371AA7FC59BDA5890A483 /* YLWindowOperateView.swift */; };
+		55988691D21E4BC78512A0EE1E94C89F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49138219DF7B8B641171FCB5FE788D99 /* Device.swift */; };
+		559E96141FEEE3AB31F006B7CDBF51A1 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A938132C1C485439B63FD8872E782949 /* AppInfo.swift */; };
+		57D7D77A2CE739207E1F62632D37EA9E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DC663F41FE6F0E7B015CACE8E55758 /* Color.swift */; };
+		5C84072FF4FA24F68E6A76490C0FCF44 /* YLShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576766E9CE9A10BA00CCC032E432865B /* YLShortcutView.swift */; };
+		5DBE90CA9F6B4C97AC4B2B8E43D56B45 /* YLUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C05ACEEAEBAF3FE409F01DD3C517F /* YLUpdateManager.swift */; };
+		614A517DF5E5F4BC6DC240FC5FE1809A /* NSView+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67BDC260A6E48039066EB8106BA3B7C /* NSView+Category.swift */; };
+		6299B9C1A19AAD1B46751D46227F07E2 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90352A68267109D5E1D8551140F9B8D /* String+Category.swift */; };
+		6376E7B5740922DED2283420B0090E01 /* YLLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB7A62690825F021A6A3FDA709F713 /* YLLanguageModel.swift */; };
+		64122B28D9571CFC9ABB703F9A89020D /* YLUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46700DDC5A234142A41ACDE9EB73C830 /* YLUpdateViewController.swift */; };
+		6D060C5B24B9E40A20AB727A223268F9 /* NSObject+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C2CCDABC49AFC3A6D44916276A5DB2 /* NSObject+Event.swift */; };
+		71FD021AAB42AAB6CF3311EDF42515DF /* YLControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D18E23E426CF5A0A71425AA906F8D /* YLControl.swift */; };
+		779C0F2BC3BC28AD668E5A75EE80964A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F3E2D5A20D2AC1736B395F13CEB08 /* Font.swift */; };
+		799D06B2900196DDAA8867B2AAA768BA /* YLShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D096AF1190DA84D34E166EC5267F4F /* YLShortcutManager.swift */; };
+		7A8CE21375D4441BF99D7F06D998DF97 /* YLPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD14EE78BB88F9DAE2DDCC81159BB014 /* YLPermissionViewController.swift */; };
+		8543E10DFCA259582F3B223F31B262E5 /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E7BA97CD8FBD0E9AA617940115256 /* CoordinateSystem.swift */; };
+		90B3AB417FFCD4AE71886E2150164E2F /* YLWindowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E212C590F8E9BE0FC228AFF1E6F96E1 /* YLWindowButton.swift */; };
+		9C3044680F22D90FCA0E7C087B30E569 /* YLUpdateXMLParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2918EA6961D734BE3B5D936FAF27AEFB /* YLUpdateXMLParserDelegate.swift */; };
+		9CDFA63EF1D75703FB5991B629E44624 /* YLLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84BABE0B215A6BE271CB3EE6116FB96 /* YLLanguage.swift */; };
+		9FD9147D9D7A5D163258C4DC2B2B9118 /* NSObject+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4619272842214303C91E0EE952731 /* NSObject+Notification.swift */; };
+		A321039120EA858BB7D4687329249BD9 /* YLAppleReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26DF5502C8851CD4507E1EC1F3B992 /* YLAppleReview.swift */; };
+		A8725B3FFB3A7D8ED70FC6E590699918 /* NSAlert+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C4DCDDF1848388B4E283C00825D0D /* NSAlert+Category.swift */; };
+		A9D368D38BDF2875B1F2495622591D5B /* YLScrollLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F57A3A3AF08C6CBFCF681C883F2F62 /* YLScrollLabel.swift */; };
+		ACB9000DB53933A506A12306ED9DE9F4 /* YLCategory-Swift-MacOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1C87C83524AC29CD693764D0ED770 /* YLCategory-Swift-MacOS-dummy.m */; };
+		B1EA5CD007B41AE6D51C876CC8345141 /* Pods-FileSystem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47205EC93C971AB17E581F3B49613966 /* Pods-FileSystem-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B741105AD43E7A18365B65F2914EE738 /* NSTextField+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B71249E4D687A14AC1B188CD217111 /* NSTextField+Category.swift */; };
+		BBC2A3EA7EFE15FE7B6F67DDDE8D83C2 /* Pods-FileSystem-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C389301A6F9319E78FB89E0DB8FB09 /* Pods-FileSystem-dummy.m */; };
+		BD93F2F40B97666BFC16F18A056E8858 /* YLPermissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8F3374114A5FB8BE2B43AEFE7B6BA /* YLPermissionModel.swift */; };
+		BDC70D4DA856A182B402FB5697CE1075 /* YLAppleScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0994DE807AA6A89D8C9E36FAB1ECE77F /* YLAppleScript.swift */; };
+		BFB91F688EAF526B4C914F1FA9543F66 /* NSButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB07B5220A6D07DBB3293CC2F5B8495 /* NSButton+Category.swift */; };
+		C5339055F5B3474A5D4772C1FEDCC7D5 /* YLSystemBeep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6025E4E8D5927B7022D277BDF991C6D3 /* YLSystemBeep.swift */; };
+		C81D1A660427FF8CBF30DB81E22B1204 /* NSOpenPanel+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752816C52D66856DF58FC6890B5E6331 /* NSOpenPanel+Category.swift */; };
+		C8B928348FDE3276C510B610F146F2E3 /* NSWindow+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10EA3559D85F1B77D686C815AC12631 /* NSWindow+Frame.swift */; };
+		CAED9E7C8FA6728ED41B1045FC65B479 /* YLFileAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE757DDBF526F0675BEB80920F8EADA1 /* YLFileAccess.swift */; };
+		CE2970DEB728D4DFEA2F522754E34A56 /* String+Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD45124A5A865D16AE63D998EE27F7D6 /* String+Predicate.swift */; };
+		CF9933D44443A4F9E07E70A01EF1CD77 /* NSColor+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B758A1D9AC911E76F9748A0668F2AC /* NSColor+Category.swift */; };
+		D14B5D0F4221C14B416BFEF56B88408E /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F87012DBFE211B10E46CD811322C78 /* Screen.swift */; };
+		D4FFB16E662B3D9383F90CB7537AAD7E /* NSView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C9A53A433B024E48F01F4B108B178A /* NSView+Gesture.swift */; };
+		D735A3C81569D70F7B8E05ED90632E58 /* YLFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312907B7828CA1E070C4A7ADED98FB3D /* YLFlipView.swift */; };
+		D7CEF8012E3F417E78F91DF72BE685E3 /* YLPermissionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CE1911C99D372DF90A7028B2199E7D /* YLPermissionItem.swift */; };
+		DD1E9C014C38DDF953BF48CC7FBD3CF2 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E776B39C3B9ECE402C21E5E3B9146B6 /* AppEnvironment.swift */; };
+		E31F0EEA126E61AA027F8051A63E5AE9 /* YLCategory-Swift-MacOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2326BE83183401F6534983E1F82F611A /* YLCategory-Swift-MacOS-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4EA01A84D5C387AF64B3B44843C9E6C /* NSDate+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290A380E55D64F0DF1952FC46085A81 /* NSDate+Category.swift */; };
+		E934D6C53F55F940DCBEE6C9D667A9B8 /* NSSavePanel+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFD4B80EC12FB5E72C2B9B005B2A1F0 /* NSSavePanel+Category.swift */; };
+		EA94A39D3232D6960DD7C3074160607D /* OS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDDA3D9272A006E0DB43DF918436BB /* OS.swift */; };
+		EADD8AF3F95F86338BB08E2FEEB7BAF0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B48561CFD204AE2FCDBCD5E589B16A /* Extension.swift */; };
+		FC2DA92BA2418431B3ECE866E6A01798 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C946461FE2980EBA93EB568996F5B9 /* Process.swift */; };
+		FF0D0865E7A1E191F333F627D0EA30EF /* YLCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793948B94FAE7D4BE6D8270E6C02EC7 /* YLCollectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8C405D02A10025B37FAFA2098EF2593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4F0622F1719A278A4FBA6B5C17630D9;
+			remoteInfo = "YLCategory-Swift-MacOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002BACEC68809D1F041E7C320E653E40 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "YLCategory-Swift-MacOS/YLAppleScript/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		04A4FA6B707A22956383EC9513C9231A /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/ja.lproj"; sourceTree = "<group>"; };
+		0793948B94FAE7D4BE6D8270E6C02EC7 /* YLCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLCollectionView.swift; path = "YLCategory-Swift-MacOS/YLCollectionView/YLCollectionView.swift"; sourceTree = "<group>"; };
+		0994DE807AA6A89D8C9E36FAB1ECE77F /* YLAppleScript.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLAppleScript.swift; path = "YLCategory-Swift-MacOS/YLAppleScript/YLAppleScript.swift"; sourceTree = "<group>"; };
+		0BAA69A4616D834F8C30D4A355B3D322 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "YLCategory-Swift-MacOS/YLFileAccess/Resources/ja.lproj"; sourceTree = "<group>"; };
+		0C4422E9D18C50B000291C718F79CC5E /* YLPermissionWindowController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLPermissionWindowController.swift; path = "YLCategory-Swift-MacOS/YLPermissionManager/YLPermissionWindowController.swift"; sourceTree = "<group>"; };
+		0CCA463F74F02F3818D0017CB74DC47B /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "YLCategory-Swift-MacOS/YLUpdateManager/Resources/fr.lproj"; sourceTree = "<group>"; };
+		0E212C590F8E9BE0FC228AFF1E6F96E1 /* YLWindowButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLWindowButton.swift; path = "YLCategory-Swift-MacOS/YLWindowButton/YLWindowButton.swift"; sourceTree = "<group>"; };
+		0F16A4FA0EDCC8C0304C6B55FEA8567E /* YLAppRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLAppRating.swift; path = "YLCategory-Swift-MacOS/YLAppRating/YLAppRating.swift"; sourceTree = "<group>"; };
+		12B758A1D9AC911E76F9748A0668F2AC /* NSColor+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSColor+Category.swift"; path = "YLCategory-Swift-MacOS/NSColor/NSColor+Category.swift"; sourceTree = "<group>"; };
+		12DC663F41FE6F0E7B015CACE8E55758 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = "YLCategory-Swift-MacOS/YLKit/Color.swift"; sourceTree = "<group>"; };
+		143C4DCDDF1848388B4E283C00825D0D /* NSAlert+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAlert+Category.swift"; path = "YLCategory-Swift-MacOS/NSAlert/NSAlert+Category.swift"; sourceTree = "<group>"; };
+		16C9A53A433B024E48F01F4B108B178A /* NSView+Gesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Gesture.swift"; path = "YLCategory-Swift-MacOS/NSView/NSView+Gesture.swift"; sourceTree = "<group>"; };
+		16D6BD4A0896A3CFCCD5C97163CD529D /* YLPermissionManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = YLPermissionManager.bundle; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/YLPermissionManager.bundle"; sourceTree = "<group>"; };
+		196FEFFC55AB74D1559107972FBC7750 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/de.lproj"; sourceTree = "<group>"; };
+		19811ED1BDAD000C3A29CF27BF27E876 /* NSView+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Frame.swift"; path = "YLCategory-Swift-MacOS/NSView/NSView+Frame.swift"; sourceTree = "<group>"; };
+		1A8F2069FA5DC000211D2E177BF5DD0F /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/ko.lproj"; sourceTree = "<group>"; };
+		2044FCB2E6890BD12DAC001931E347D5 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "YLCategory-Swift-MacOS/YLUpdateManager/Resources/de.lproj"; sourceTree = "<group>"; };
+		2143BB945F428596AC659E0CB90F506D /* YLCFNotificationCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLCFNotificationCenter.swift; path = "YLCategory-Swift-MacOS/YLCFNotificationManager/YLCFNotificationCenter.swift"; sourceTree = "<group>"; };
+		21AF1660E49D418B06DE4DF199BFE781 /* NSView+SmoothCorner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+SmoothCorner.swift"; path = "YLCategory-Swift-MacOS/NSView/NSView+SmoothCorner.swift"; sourceTree = "<group>"; };
+		2326BE83183401F6534983E1F82F611A /* YLCategory-Swift-MacOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLCategory-Swift-MacOS-umbrella.h"; sourceTree = "<group>"; };
+		248C0A7A4166C7D761A5F39CF9254760 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		255F3E2D5A20D2AC1736B395F13CEB08 /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = "YLCategory-Swift-MacOS/YLKit/Font.swift"; sourceTree = "<group>"; };
+		25D0ACFCA57032DAF32411F5A5984816 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "YLCategory-Swift-MacOS/YLUpdateManager/Resources/en.lproj"; sourceTree = "<group>"; };
+		25F57A3A3AF08C6CBFCF681C883F2F62 /* YLScrollLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLScrollLabel.swift; path = "YLCategory-Swift-MacOS/YLScrollLabel/YLScrollLabel.swift"; sourceTree = "<group>"; };
+		2918EA6961D734BE3B5D936FAF27AEFB /* YLUpdateXMLParserDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLUpdateXMLParserDelegate.swift; path = "YLCategory-Swift-MacOS/YLUpdateManager/YLUpdateXMLParserDelegate.swift"; sourceTree = "<group>"; };
+		2B842D69096FFA752B38AED545A1E6B9 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "YLCategory-Swift-MacOS/YLFileAccess/Resources/fr.lproj"; sourceTree = "<group>"; };
+		2E48E2A95738219F258440DC6150F4DE /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/es.lproj"; sourceTree = "<group>"; };
+		2E9DCD05C7CCE786F8F50582C6A8CC70 /* YLShortcutManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = YLShortcutManager.bundle; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/YLShortcutManager.bundle"; sourceTree = "<group>"; };
+		2F9D2935B61B50C193088383EAE71AC1 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "YLCategory-Swift-MacOS/YLFileAccess/Resources/ko.lproj"; sourceTree = "<group>"; };
+		303CD3E9B99B6F9CB19EB282A537665B /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "YLCategory-Swift-MacOS/YLLanguage/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		30B71249E4D687A14AC1B188CD217111 /* NSTextField+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextField+Category.swift"; path = "YLCategory-Swift-MacOS/NSTextField/NSTextField+Category.swift"; sourceTree = "<group>"; };
+		312907B7828CA1E070C4A7ADED98FB3D /* YLFlipView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLFlipView.swift; path = "YLCategory-Swift-MacOS/YLFlipView/YLFlipView.swift"; sourceTree = "<group>"; };
+		312FC85C9EBC4011762B21F5F6678E40 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "YLCategory-Swift-MacOS/YLFileAccess/Resources/en.lproj"; sourceTree = "<group>"; };
+		3561218E79AF3BD555BA55835B359882 /* YLCategory-Swift-MacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YLCategory-Swift-MacOS.release.xcconfig"; sourceTree = "<group>"; };
+		37D096AF1190DA84D34E166EC5267F4F /* YLShortcutManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLShortcutManager.swift; path = "YLCategory-Swift-MacOS/YLShortcutView/YLShortcutManager.swift"; sourceTree = "<group>"; };
+		396A6EA1543AAC731042AB7B8F036EC1 /* YLCategory-Swift-MacOS */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "YLCategory-Swift-MacOS"; path = "libYLCategory-Swift-MacOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD9CAA4CA1CA07CBBD23A5B1B884910 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "YLCategory-Swift-MacOS/YLLanguage/Resources/ko.lproj"; sourceTree = "<group>"; };
+		3AE01049CD7AC56D10018E4C9A22334A /* Pods-FileSystem-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FileSystem-resources.sh"; sourceTree = "<group>"; };
+		3C1349518C76AC2AD536F1F643838245 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "YLCategory-Swift-MacOS/YLFileAccess/Resources/de.lproj"; sourceTree = "<group>"; };
+		432754971CDF793F014C5733F96189D4 /* YLCategory-Swift-MacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YLCategory-Swift-MacOS.debug.xcconfig"; sourceTree = "<group>"; };
+		45F87012DBFE211B10E46CD811322C78 /* Screen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Screen.swift; path = "YLCategory-Swift-MacOS/YLKit/Screen.swift"; sourceTree = "<group>"; };
+		46700DDC5A234142A41ACDE9EB73C830 /* YLUpdateViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLUpdateViewController.swift; path = "YLCategory-Swift-MacOS/YLUpdateManager/YLUpdateViewController.swift"; sourceTree = "<group>"; };
+		47205EC93C971AB17E581F3B49613966 /* Pods-FileSystem-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FileSystem-umbrella.h"; sourceTree = "<group>"; };
+		48E4527ADD478AE027370593EF45BCBE /* YLTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLTextField.swift; path = "YLCategory-Swift-MacOS/YLTextField/YLTextField.swift"; sourceTree = "<group>"; };
+		49138219DF7B8B641171FCB5FE788D99 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = "YLCategory-Swift-MacOS/YLKit/Device.swift"; sourceTree = "<group>"; };
+		4A2E327EA44A23C9CE3EDFEF91E6E575 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "YLCategory-Swift-MacOS/YLLanguage/Resources/pt.lproj"; sourceTree = "<group>"; };
+		4A57A76D54A493ACD2F6EE2A6BA942A2 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "YLCategory-Swift-MacOS/YLAppleScript/Resources/es.lproj"; sourceTree = "<group>"; };
+		4BDF074846A9DAB519A1B822594B812C /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "YLCategory-Swift-MacOS/YLLanguage/Resources/es.lproj"; sourceTree = "<group>"; };
+		4BF11BD111AF82A9ADFF937C6B45009A /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "YLCategory-Swift-MacOS/YLFileAccess/Resources/pt.lproj"; sourceTree = "<group>"; };
+		4DB07B5220A6D07DBB3293CC2F5B8495 /* NSButton+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSButton+Category.swift"; path = "YLCategory-Swift-MacOS/NSButton/NSButton+Category.swift"; sourceTree = "<group>"; };
+		4EF1C87C83524AC29CD693764D0ED770 /* YLCategory-Swift-MacOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YLCategory-Swift-MacOS-dummy.m"; sourceTree = "<group>"; };
+		4F15F938523C750B6285125A7FBC131D /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/fr.lproj"; sourceTree = "<group>"; };
+		4F5639FEBE35964A186AE3B5E6EA100B /* NSWindow+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSWindow+Category.swift"; path = "YLCategory-Swift-MacOS/NSWindow/NSWindow+Category.swift"; sourceTree = "<group>"; };
+		52B48561CFD204AE2FCDBCD5E589B16A /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = "YLCategory-Swift-MacOS/YLKit/Extension.swift"; sourceTree = "<group>"; };
+		562F12E0D5AE5E7C1F66148D30DEFC3E /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "YLCategory-Swift-MacOS/YLFileAccess/Resources/es.lproj"; sourceTree = "<group>"; };
+		576766E9CE9A10BA00CCC032E432865B /* YLShortcutView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLShortcutView.swift; path = "YLCategory-Swift-MacOS/YLShortcutView/YLShortcutView.swift"; sourceTree = "<group>"; };
+		57EBD6B4C5DDDAF6F38D458A92616616 /* YLTipButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLTipButton.swift; path = "YLCategory-Swift-MacOS/YLTipButton/YLTipButton.swift"; sourceTree = "<group>"; };
+		589207EBDFC657F3E739FF53A464252B /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "YLCategory-Swift-MacOS/YLAppleScript/Resources/de.lproj"; sourceTree = "<group>"; };
+		5CE274878A5D412529BCE9CDDD7F66DD /* NSImageView+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSImageView+Category.swift"; path = "YLCategory-Swift-MacOS/NSImageView/NSImageView+Category.swift"; sourceTree = "<group>"; };
+		5D5D55C562BD803E37881471D6F7C05B /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/pt.lproj"; sourceTree = "<group>"; };
+		5FE277B9581BF2DB956D5BE89BBF1A42 /* YLHud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLHud.swift; path = "YLCategory-Swift-MacOS/YLHud/YLHud.swift"; sourceTree = "<group>"; };
+		6025E4E8D5927B7022D277BDF991C6D3 /* YLSystemBeep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLSystemBeep.swift; path = "YLCategory-Swift-MacOS/YLSystemBeep/YLSystemBeep.swift"; sourceTree = "<group>"; };
+		60E07DF0C1911318091C63180CA14A57 /* YLUserDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLUserDefaults.swift; path = "YLCategory-Swift-MacOS/YLUserDefaults/YLUserDefaults.swift"; sourceTree = "<group>"; };
+		6403628907ACAE6B38895A3B4CCB1642 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "YLCategory-Swift-MacOS/YLFileAccess/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		6A46C614946ABB14494717CF526953DD /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "YLCategory-Swift-MacOS/YLAppleScript/Resources/fr.lproj"; sourceTree = "<group>"; };
+		6ABBA596C01915AF87F801C17FF09D36 /* YLPermissionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLPermissionManager.swift; path = "YLCategory-Swift-MacOS/YLPermissionManager/YLPermissionManager.swift"; sourceTree = "<group>"; };
+		6B81594ADC516ED6E05CFF8071FCD3AB /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "YLCategory-Swift-MacOS/YLLanguage/Resources/en.lproj"; sourceTree = "<group>"; };
+		6C3C05ACEEAEBAF3FE409F01DD3C517F /* YLUpdateManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLUpdateManager.swift; path = "YLCategory-Swift-MacOS/YLUpdateManager/YLUpdateManager.swift"; sourceTree = "<group>"; };
+		7071A9B161A1C88747FA148A856758AB /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "YLCategory-Swift-MacOS/YLLanguage/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		72A8622AA025B6F60FBAF8FCC8351454 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = "YLCategory-Swift-MacOS/Async/Async.swift"; sourceTree = "<group>"; };
+		73720D19565F2427BDF03E95DAB58BA6 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "YLCategory-Swift-MacOS/YLFileAccess/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		752816C52D66856DF58FC6890B5E6331 /* NSOpenPanel+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSOpenPanel+Category.swift"; path = "YLCategory-Swift-MacOS/NSOpenPanel/NSOpenPanel+Category.swift"; sourceTree = "<group>"; };
+		7CB72CA926C490A2C4BE1E9B06AEA8E5 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "YLCategory-Swift-MacOS/YLAppleScript/Resources/ja.lproj"; sourceTree = "<group>"; };
+		7D3D18E23E426CF5A0A71425AA906F8D /* YLControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLControl.swift; path = "YLCategory-Swift-MacOS/YLControl/YLControl.swift"; sourceTree = "<group>"; };
+		7EFD481DEB01BEEEB4D3FEFC6CCF5FD3 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/pt.lproj"; sourceTree = "<group>"; };
+		7FD8C0D531AABBEACCBDDACBFD5F4ABA /* String+Secret.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Secret.swift"; path = "YLCategory-Swift-MacOS/NSString/String+Secret.swift"; sourceTree = "<group>"; };
+		80B29DBB74C40C267783A049C6F7A000 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "YLCategory-Swift-MacOS/YLLanguage/Resources/fr.lproj"; sourceTree = "<group>"; };
+		81C2CCDABC49AFC3A6D44916276A5DB2 /* NSObject+Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Event.swift"; path = "YLCategory-Swift-MacOS/NSObject/NSObject+Event.swift"; sourceTree = "<group>"; };
+		830162334A07B6A98E855813EB77FE4C /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "YLCategory-Swift-MacOS/YLUpdateManager/Resources/ja.lproj"; sourceTree = "<group>"; };
+		8C1E195899BEAF856DA0D54D28AA3DF0 /* KeyCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCode.swift; path = "YLCategory-Swift-MacOS/YLKit/KeyCode.swift"; sourceTree = "<group>"; };
+		8CCF4F851E8371AA7FC59BDA5890A483 /* YLWindowOperateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLWindowOperateView.swift; path = "YLCategory-Swift-MacOS/YLWindowButton/YLWindowOperateView.swift"; sourceTree = "<group>"; };
+		8D4C7734A86E2B234C6BB2AFAB17F7AC /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = File.swift; path = "YLCategory-Swift-MacOS/YLKit/File.swift"; sourceTree = "<group>"; };
+		8E4E7BA97CD8FBD0E9AA617940115256 /* CoordinateSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoordinateSystem.swift; path = "YLCategory-Swift-MacOS/YLKit/CoordinateSystem.swift"; sourceTree = "<group>"; };
+		8E776B39C3B9ECE402C21E5E3B9146B6 /* AppEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppEnvironment.swift; path = "YLCategory-Swift-MacOS/YLKit/AppEnvironment.swift"; sourceTree = "<group>"; };
+		90745BFB6D17B2A30A187A0D0664F883 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "YLCategory-Swift-MacOS/YLLanguage/Resources/ja.lproj"; sourceTree = "<group>"; };
+		91A173A9C93963751C8BD04BE22C74B9 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/de.lproj"; sourceTree = "<group>"; };
+		9389DFAD32A30C15887EA62C05388486 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "YLCategory-Swift-MacOS/YLUpdateManager/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		958E22DB99A4A3765EAF5B563CA3C78A /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "YLCategory-Swift-MacOS/YLUpdateManager/Resources/es.lproj"; sourceTree = "<group>"; };
+		9839EC9386AE1AE2A0A6F6DA828D0B4D /* YLLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLLog.swift; path = "YLCategory-Swift-MacOS/YLKit/YLLog.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FEB7A62690825F021A6A3FDA709F713 /* YLLanguageModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLLanguageModel.swift; path = "YLCategory-Swift-MacOS/YLLanguage/YLLanguageModel.swift"; sourceTree = "<group>"; };
+		A1134AEEFC28DA521DEFF7D2C73A43C4 /* NSImage+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSImage+Category.swift"; path = "YLCategory-Swift-MacOS/NSImage/NSImage+Category.swift"; sourceTree = "<group>"; };
+		A3B4619272842214303C91E0EE952731 /* NSObject+Notification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Notification.swift"; path = "YLCategory-Swift-MacOS/NSObject/NSObject+Notification.swift"; sourceTree = "<group>"; };
+		A3C8FE3DD5B300EA12D8BB84CFB1D5FB /* Pods-FileSystem-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FileSystem-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A6A10E0CFFB54686DE8EA89AD607956D /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "YLCategory-Swift-MacOS/YLLanguage/Resources/de.lproj"; sourceTree = "<group>"; };
+		A6C946461FE2980EBA93EB568996F5B9 /* Process.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Process.swift; path = "YLCategory-Swift-MacOS/YLKit/Process.swift"; sourceTree = "<group>"; };
+		A6CE1911C99D372DF90A7028B2199E7D /* YLPermissionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLPermissionItem.swift; path = "YLCategory-Swift-MacOS/YLPermissionManager/YLPermissionItem.swift"; sourceTree = "<group>"; };
+		A9350DD7EDE9B724391DF19793DC13C9 /* NSScreen+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSScreen+Category.swift"; path = "YLCategory-Swift-MacOS/NSScreen/NSScreen+Category.swift"; sourceTree = "<group>"; };
+		A938132C1C485439B63FD8872E782949 /* AppInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppInfo.swift; path = "YLCategory-Swift-MacOS/YLKit/AppInfo.swift"; sourceTree = "<group>"; };
+		AB59EDD166EBB86D31D439E551E6D41A /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		B4AE80E27CDC2D9250EFAFA1B23F8783 /* Pods-FileSystem-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FileSystem-acknowledgements.plist"; sourceTree = "<group>"; };
+		B4D966A20ADF23F5F67AD708735B7C69 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/en.lproj"; sourceTree = "<group>"; };
+		B4F7DD20CD4DFBB1B25171128E11352D /* NSObject+KVO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+KVO.swift"; path = "YLCategory-Swift-MacOS/NSObject/NSObject+KVO.swift"; sourceTree = "<group>"; };
+		B67BDC260A6E48039066EB8106BA3B7C /* NSView+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Category.swift"; path = "YLCategory-Swift-MacOS/NSView/NSView+Category.swift"; sourceTree = "<group>"; };
+		B84BABE0B215A6BE271CB3EE6116FB96 /* YLLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLLanguage.swift; path = "YLCategory-Swift-MacOS/YLLanguage/YLLanguage.swift"; sourceTree = "<group>"; };
+		BA312715AAFBC060AD202FD2ACEA1B49 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "YLCategory-Swift-MacOS/YLAppleScript/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		BC9EDDE439458817415BBFD283376674 /* Pods-FileSystem.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FileSystem.modulemap"; sourceTree = "<group>"; };
+		BD14EE78BB88F9DAE2DDCC81159BB014 /* YLPermissionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLPermissionViewController.swift; path = "YLCategory-Swift-MacOS/YLPermissionManager/YLPermissionViewController.swift"; sourceTree = "<group>"; };
+		BDDDDA3D9272A006E0DB43DF918436BB /* OS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OS.swift; path = "YLCategory-Swift-MacOS/YLKit/OS.swift"; sourceTree = "<group>"; };
+		C2800D41A06933A28805C0DF8A41CCE8 /* Pods-FileSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FileSystem.release.xcconfig"; sourceTree = "<group>"; };
+		C3414537C7862DBA91514F2F862963E5 /* YLCategory-Swift-MacOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "YLCategory-Swift-MacOS.modulemap"; sourceTree = "<group>"; };
+		C34BFE7FC74BD117FC8AC70D7E262742 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/ja.lproj"; sourceTree = "<group>"; };
+		C48E9758F5A8E42D5FA18D6BEBF518CB /* YLUpdateWindowController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLUpdateWindowController.swift; path = "YLCategory-Swift-MacOS/YLUpdateManager/YLUpdateWindowController.swift"; sourceTree = "<group>"; };
+		CDE4B61EAB1F9630A946E04C7BA7C16F /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "YLCategory-Swift-MacOS/YLUpdateManager/Resources/ko.lproj"; sourceTree = "<group>"; };
+		D14DC0F461B10E3E60887F23C87FEEC6 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "YLCategory-Swift-MacOS/YLKit/Event.swift"; sourceTree = "<group>"; };
+		D305552177963AD98A1E2F26B0EBE8C2 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		D5E61C08F3E922E77CD9BC7D117D71F9 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/en.lproj"; sourceTree = "<group>"; };
+		D96DB9B6322EC50A5D91FA4188905721 /* YLShortcut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLShortcut.swift; path = "YLCategory-Swift-MacOS/YLShortcutView/YLShortcut.swift"; sourceTree = "<group>"; };
+		D9C389301A6F9319E78FB89E0DB8FB09 /* Pods-FileSystem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FileSystem-dummy.m"; sourceTree = "<group>"; };
+		DC9A66DA20118A19011243E64875CC4A /* Pods-FileSystem */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-FileSystem"; path = "libPods-FileSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCFD4B80EC12FB5E72C2B9B005B2A1F0 /* NSSavePanel+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSSavePanel+Category.swift"; path = "YLCategory-Swift-MacOS/NSSavePanel/NSSavePanel+Category.swift"; sourceTree = "<group>"; };
+		DD26DF5502C8851CD4507E1EC1F3B992 /* YLAppleReview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLAppleReview.swift; path = "YLCategory-Swift-MacOS/YLAppleReview/YLAppleReview.swift"; sourceTree = "<group>"; };
+		DE757DDBF526F0675BEB80920F8EADA1 /* YLFileAccess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLFileAccess.swift; path = "YLCategory-Swift-MacOS/YLFileAccess/YLFileAccess.swift"; sourceTree = "<group>"; };
+		DFCCC95059EA07F7CB150EB4B693EBAC /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "YLCategory-Swift-MacOS/YLAppleScript/Resources/ko.lproj"; sourceTree = "<group>"; };
+		E10EA3559D85F1B77D686C815AC12631 /* NSWindow+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSWindow+Frame.swift"; path = "YLCategory-Swift-MacOS/NSWindow/NSWindow+Frame.swift"; sourceTree = "<group>"; };
+		E284B1F1B5B7E2A03EE2788A475E8324 /* YLCategory-Swift-MacOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YLCategory-Swift-MacOS-prefix.pch"; sourceTree = "<group>"; };
+		E290A380E55D64F0DF1952FC46085A81 /* NSDate+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDate+Category.swift"; path = "YLCategory-Swift-MacOS/NSDate/NSDate+Category.swift"; sourceTree = "<group>"; };
+		E31C7B716D61DA71E55D181AE244F39F /* NSControl+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSControl+Category.swift"; path = "YLCategory-Swift-MacOS/NSControl/NSControl+Category.swift"; sourceTree = "<group>"; };
+		E335154A120A017B555A260F9A637FAB /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/es.lproj"; sourceTree = "<group>"; };
+		E3F8F3374114A5FB8BE2B43AEFE7B6BA /* YLPermissionModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YLPermissionModel.swift; path = "YLCategory-Swift-MacOS/YLPermissionManager/YLPermissionModel.swift"; sourceTree = "<group>"; };
+		E53EE5C15614EB8D628A332F328F1611 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/ko.lproj"; sourceTree = "<group>"; };
+		E669D0E5F2BB6D43AD9024307779F8A2 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "YLCategory-Swift-MacOS/YLAppleScript/Resources/en.lproj"; sourceTree = "<group>"; };
+		E87D3DF1185D06E28DFEB999806255FA /* Pods-FileSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FileSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		F0C5A292C20E8C8696532E9C5EDFC218 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "YLCategory-Swift-MacOS/YLAppleScript/Resources/pt.lproj"; sourceTree = "<group>"; };
+		F0E33647FC5A26E78BB50E427F64C159 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "YLCategory-Swift-MacOS/YLUpdateManager/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		F49B15E08EE0A75C63B1D33FEADDDB11 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "YLCategory-Swift-MacOS/YLPermissionManager/Resources/fr.lproj"; sourceTree = "<group>"; };
+		F90352A68267109D5E1D8551140F9B8D /* String+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Category.swift"; path = "YLCategory-Swift-MacOS/NSString/String+Category.swift"; sourceTree = "<group>"; };
+		F96760DC35555E70BB84238CA08AE54D /* NSResponder+Category.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSResponder+Category.swift"; path = "YLCategory-Swift-MacOS/NSResponder/NSResponder+Category.swift"; sourceTree = "<group>"; };
+		FAAFCFAB024FDF4DEFE67A5387F82152 /* YLHud.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = YLHud.bundle; path = "YLCategory-Swift-MacOS/YLHud/Resources/YLHud.bundle"; sourceTree = "<group>"; };
+		FD45124A5A865D16AE63D998EE27F7D6 /* String+Predicate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Predicate.swift"; path = "YLCategory-Swift-MacOS/NSString/String+Predicate.swift"; sourceTree = "<group>"; };
+		FE158F3AD2A12A04EB99DB4D4BE0D786 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "YLCategory-Swift-MacOS/YLUpdateManager/Resources/pt.lproj"; sourceTree = "<group>"; };
+		FF3D3F9611819D9F7312373028BE4899 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "YLCategory-Swift-MacOS/YLShortcutView/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		745CD5073B0F3D7F9D5B3B414A7321BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B71334F0388CA52332E7B90E55FE117E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C3AF7498ADC283728235AD334474F37 /* NSColor */ = {
+			isa = PBXGroup;
+			children = (
+				12B758A1D9AC911E76F9748A0668F2AC /* NSColor+Category.swift */,
+			);
+			name = NSColor;
+			sourceTree = "<group>";
+		};
+		0F964635054F04F8F0087244155B2331 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2044FCB2E6890BD12DAC001931E347D5 /* de.lproj */,
+				25D0ACFCA57032DAF32411F5A5984816 /* en.lproj */,
+				958E22DB99A4A3765EAF5B563CA3C78A /* es.lproj */,
+				0CCA463F74F02F3818D0017CB74DC47B /* fr.lproj */,
+				830162334A07B6A98E855813EB77FE4C /* ja.lproj */,
+				CDE4B61EAB1F9630A946E04C7BA7C16F /* ko.lproj */,
+				FE158F3AD2A12A04EB99DB4D4BE0D786 /* pt.lproj */,
+				F0E33647FC5A26E78BB50E427F64C159 /* zh-Hans.lproj */,
+				9389DFAD32A30C15887EA62C05388486 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		12B6796736A30EC1372782EAE0D0772B /* NSOpenPanel */ = {
+			isa = PBXGroup;
+			children = (
+				752816C52D66856DF58FC6890B5E6331 /* NSOpenPanel+Category.swift */,
+			);
+			name = NSOpenPanel;
+			sourceTree = "<group>";
+		};
+		1657F93AFC22A4A537EEFA4D918D9B06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6A10E0CFFB54686DE8EA89AD607956D /* de.lproj */,
+				6B81594ADC516ED6E05CFF8071FCD3AB /* en.lproj */,
+				4BDF074846A9DAB519A1B822594B812C /* es.lproj */,
+				80B29DBB74C40C267783A049C6F7A000 /* fr.lproj */,
+				90745BFB6D17B2A30A187A0D0664F883 /* ja.lproj */,
+				3AD9CAA4CA1CA07CBBD23A5B1B884910 /* ko.lproj */,
+				4A2E327EA44A23C9CE3EDFEF91E6E575 /* pt.lproj */,
+				7071A9B161A1C88747FA148A856758AB /* zh-Hans.lproj */,
+				303CD3E9B99B6F9CB19EB282A537665B /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1833D4921390776ACC4B9CF66DF8A494 /* NSScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A9350DD7EDE9B724391DF19793DC13C9 /* NSScreen+Category.swift */,
+			);
+			name = NSScreen;
+			sourceTree = "<group>";
+		};
+		193FB7B1CF99741B9D4DB91B8DEAED46 /* YLScrollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				25F57A3A3AF08C6CBFCF681C883F2F62 /* YLScrollLabel.swift */,
+			);
+			name = YLScrollLabel;
+			sourceTree = "<group>";
+		};
+		2463195F92B508070BFFF6CC3167CBDF /* YLAppRating */ = {
+			isa = PBXGroup;
+			children = (
+				0F16A4FA0EDCC8C0304C6B55FEA8567E /* YLAppRating.swift */,
+			);
+			name = YLAppRating;
+			sourceTree = "<group>";
+		};
+		260A9BC936A98B14C8DE362E4E205E75 /* NSButton */ = {
+			isa = PBXGroup;
+			children = (
+				4DB07B5220A6D07DBB3293CC2F5B8495 /* NSButton+Category.swift */,
+			);
+			name = NSButton;
+			sourceTree = "<group>";
+		};
+		313EDD0DE2EDF73053F158D00E2BDF75 /* NSControl */ = {
+			isa = PBXGroup;
+			children = (
+				E31C7B716D61DA71E55D181AE244F39F /* NSControl+Category.swift */,
+			);
+			name = NSControl;
+			sourceTree = "<group>";
+		};
+		3BBF58D01E034D30CDD3B20B1BBE448A /* YLUpdateManager */ = {
+			isa = PBXGroup;
+			children = (
+				6C3C05ACEEAEBAF3FE409F01DD3C517F /* YLUpdateManager.swift */,
+				46700DDC5A234142A41ACDE9EB73C830 /* YLUpdateViewController.swift */,
+				C48E9758F5A8E42D5FA18D6BEBF518CB /* YLUpdateWindowController.swift */,
+				2918EA6961D734BE3B5D936FAF27AEFB /* YLUpdateXMLParserDelegate.swift */,
+				0F964635054F04F8F0087244155B2331 /* Resources */,
+			);
+			name = YLUpdateManager;
+			sourceTree = "<group>";
+		};
+		4009D2C5D91B5F37D1B00B7B51DB4F64 /* NSResponder */ = {
+			isa = PBXGroup;
+			children = (
+				F96760DC35555E70BB84238CA08AE54D /* NSResponder+Category.swift */,
+			);
+			name = NSResponder;
+			sourceTree = "<group>";
+		};
+		4BCE3E88EA7D713D6B77EBC5E0A22CEC /* YLSystemBeep */ = {
+			isa = PBXGroup;
+			children = (
+				6025E4E8D5927B7022D277BDF991C6D3 /* YLSystemBeep.swift */,
+			);
+			name = YLSystemBeep;
+			sourceTree = "<group>";
+		};
+		5024FD16265DDD491472FDBD5FF8CFDC /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				E290A380E55D64F0DF1952FC46085A81 /* NSDate+Category.swift */,
+			);
+			name = NSDate;
+			sourceTree = "<group>";
+		};
+		53CDF11DE355BA716FC8BB5571416F6F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6FFEDDBC74CCBA2934833B2F61D786A /* Pods-FileSystem */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5BB90DF1304252D49D8D4066E23465FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91A173A9C93963751C8BD04BE22C74B9 /* de.lproj */,
+				D5E61C08F3E922E77CD9BC7D117D71F9 /* en.lproj */,
+				E335154A120A017B555A260F9A637FAB /* es.lproj */,
+				F49B15E08EE0A75C63B1D33FEADDDB11 /* fr.lproj */,
+				04A4FA6B707A22956383EC9513C9231A /* ja.lproj */,
+				E53EE5C15614EB8D628A332F328F1611 /* ko.lproj */,
+				7EFD481DEB01BEEEB4D3FEFC6CCF5FD3 /* pt.lproj */,
+				16D6BD4A0896A3CFCCD5C97163CD529D /* YLPermissionManager.bundle */,
+				AB59EDD166EBB86D31D439E551E6D41A /* zh-Hans.lproj */,
+				D305552177963AD98A1E2F26B0EBE8C2 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5DEC51F051F86617354E45D966C37FA1 /* YLControl */ = {
+			isa = PBXGroup;
+			children = (
+				7D3D18E23E426CF5A0A71425AA906F8D /* YLControl.swift */,
+			);
+			name = YLControl;
+			sourceTree = "<group>";
+		};
+		5E59FE3296DEABABBB17E2561782B69C /* NSImage */ = {
+			isa = PBXGroup;
+			children = (
+				A1134AEEFC28DA521DEFF7D2C73A43C4 /* NSImage+Category.swift */,
+			);
+			name = NSImage;
+			sourceTree = "<group>";
+		};
+		5EDD9E1F3EBF33FFFAE4944B7D2A92E8 /* NSTextField */ = {
+			isa = PBXGroup;
+			children = (
+				30B71249E4D687A14AC1B188CD217111 /* NSTextField+Category.swift */,
+			);
+			name = NSTextField;
+			sourceTree = "<group>";
+		};
+		61CED92AA72C0ED26DE857F4C4BC70E8 /* YLFlipView */ = {
+			isa = PBXGroup;
+			children = (
+				312907B7828CA1E070C4A7ADED98FB3D /* YLFlipView.swift */,
+			);
+			name = YLFlipView;
+			sourceTree = "<group>";
+		};
+		75EDBEA57456FE126FF0A32B50EA0C1E /* YLAppleReview */ = {
+			isa = PBXGroup;
+			children = (
+				DD26DF5502C8851CD4507E1EC1F3B992 /* YLAppleReview.swift */,
+			);
+			name = YLAppleReview;
+			sourceTree = "<group>";
+		};
+		769DE063D19903F05B2794B2D09A38FB /* YLKit */ = {
+			isa = PBXGroup;
+			children = (
+				8E776B39C3B9ECE402C21E5E3B9146B6 /* AppEnvironment.swift */,
+				A938132C1C485439B63FD8872E782949 /* AppInfo.swift */,
+				12DC663F41FE6F0E7B015CACE8E55758 /* Color.swift */,
+				8E4E7BA97CD8FBD0E9AA617940115256 /* CoordinateSystem.swift */,
+				49138219DF7B8B641171FCB5FE788D99 /* Device.swift */,
+				D14DC0F461B10E3E60887F23C87FEEC6 /* Event.swift */,
+				52B48561CFD204AE2FCDBCD5E589B16A /* Extension.swift */,
+				8D4C7734A86E2B234C6BB2AFAB17F7AC /* File.swift */,
+				255F3E2D5A20D2AC1736B395F13CEB08 /* Font.swift */,
+				8C1E195899BEAF856DA0D54D28AA3DF0 /* KeyCode.swift */,
+				BDDDDA3D9272A006E0DB43DF918436BB /* OS.swift */,
+				A6C946461FE2980EBA93EB568996F5B9 /* Process.swift */,
+				45F87012DBFE211B10E46CD811322C78 /* Screen.swift */,
+				9839EC9386AE1AE2A0A6F6DA828D0B4D /* YLLog.swift */,
+			);
+			name = YLKit;
+			sourceTree = "<group>";
+		};
+		88FF8065951E8D0DB64E052641AE379A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9A66DA20118A19011243E64875CC4A /* Pods-FileSystem */,
+				396A6EA1543AAC731042AB7B8F036EC1 /* YLCategory-Swift-MacOS */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9110EF28BE4EC909476979A8546C2312 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3414537C7862DBA91514F2F862963E5 /* YLCategory-Swift-MacOS.modulemap */,
+				4EF1C87C83524AC29CD693764D0ED770 /* YLCategory-Swift-MacOS-dummy.m */,
+				E284B1F1B5B7E2A03EE2788A475E8324 /* YLCategory-Swift-MacOS-prefix.pch */,
+				2326BE83183401F6534983E1F82F611A /* YLCategory-Swift-MacOS-umbrella.h */,
+				432754971CDF793F014C5733F96189D4 /* YLCategory-Swift-MacOS.debug.xcconfig */,
+				3561218E79AF3BD555BA55835B359882 /* YLCategory-Swift-MacOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YLCategory-Swift-MacOS";
+			sourceTree = "<group>";
+		};
+		92BB51097A62A9FAB673BD5BACD0AC49 /* YLTextField */ = {
+			isa = PBXGroup;
+			children = (
+				48E4527ADD478AE027370593EF45BCBE /* YLTextField.swift */,
+			);
+			name = YLTextField;
+			sourceTree = "<group>";
+		};
+		93C4AD5B2FCE7926FD32822086D8B11D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAAFCFAB024FDF4DEFE67A5387F82152 /* YLHud.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		97623575AFD26E340CD0ECC88EA6BBB1 /* YLWindowButton */ = {
+			isa = PBXGroup;
+			children = (
+				0E212C590F8E9BE0FC228AFF1E6F96E1 /* YLWindowButton.swift */,
+				8CCF4F851E8371AA7FC59BDA5890A483 /* YLWindowOperateView.swift */,
+			);
+			name = YLWindowButton;
+			sourceTree = "<group>";
+		};
+		97629CA52A9FFE60D41D577DFAA9A342 /* NSImageView */ = {
+			isa = PBXGroup;
+			children = (
+				5CE274878A5D412529BCE9CDDD7F66DD /* NSImageView+Category.swift */,
+			);
+			name = NSImageView;
+			sourceTree = "<group>";
+		};
+		981D06D500284CAD108E8D86E00DD817 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				F90352A68267109D5E1D8551140F9B8D /* String+Category.swift */,
+				FD45124A5A865D16AE63D998EE27F7D6 /* String+Predicate.swift */,
+				7FD8C0D531AABBEACCBDDACBFD5F4ABA /* String+Secret.swift */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		99FEB86C4B1A709D560D612120210AD4 /* YLCFNotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				2143BB945F428596AC659E0CB90F506D /* YLCFNotificationCenter.swift */,
+			);
+			name = YLCFNotificationManager;
+			sourceTree = "<group>";
+		};
+		9D5B02589D0023FEA6906FECC35FB9EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC87D5F7B5A59DA1AD1D7DD3A68683C6 /* YLCategory-Swift-MacOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E9BF313A9C5B0D04544EC8A81D25B5B /* NSWindow */ = {
+			isa = PBXGroup;
+			children = (
+				4F5639FEBE35964A186AE3B5E6EA100B /* NSWindow+Category.swift */,
+				E10EA3559D85F1B77D686C815AC12631 /* NSWindow+Frame.swift */,
+			);
+			name = NSWindow;
+			sourceTree = "<group>";
+		};
+		A6FFEDDBC74CCBA2934833B2F61D786A /* Pods-FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				BC9EDDE439458817415BBFD283376674 /* Pods-FileSystem.modulemap */,
+				A3C8FE3DD5B300EA12D8BB84CFB1D5FB /* Pods-FileSystem-acknowledgements.markdown */,
+				B4AE80E27CDC2D9250EFAFA1B23F8783 /* Pods-FileSystem-acknowledgements.plist */,
+				D9C389301A6F9319E78FB89E0DB8FB09 /* Pods-FileSystem-dummy.m */,
+				3AE01049CD7AC56D10018E4C9A22334A /* Pods-FileSystem-resources.sh */,
+				47205EC93C971AB17E581F3B49613966 /* Pods-FileSystem-umbrella.h */,
+				E87D3DF1185D06E28DFEB999806255FA /* Pods-FileSystem.debug.xcconfig */,
+				C2800D41A06933A28805C0DF8A41CCE8 /* Pods-FileSystem.release.xcconfig */,
+			);
+			name = "Pods-FileSystem";
+			path = "Target Support Files/Pods-FileSystem";
+			sourceTree = "<group>";
+		};
+		ABE5A0DB19B6FA8E09546F5A95BD6662 /* YLShortcutView */ = {
+			isa = PBXGroup;
+			children = (
+				D96DB9B6322EC50A5D91FA4188905721 /* YLShortcut.swift */,
+				37D096AF1190DA84D34E166EC5267F4F /* YLShortcutManager.swift */,
+				576766E9CE9A10BA00CCC032E432865B /* YLShortcutView.swift */,
+				FE972539F06BF097DD3057EA7323018B /* Resources */,
+			);
+			name = YLShortcutView;
+			sourceTree = "<group>";
+		};
+		AF127E2BE3B2E52D1F6D886D4E7FDD1C /* YLUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				60E07DF0C1911318091C63180CA14A57 /* YLUserDefaults.swift */,
+			);
+			name = YLUserDefaults;
+			sourceTree = "<group>";
+		};
+		B75831AABB854AA440461ABE42CBEA24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C1349518C76AC2AD536F1F643838245 /* de.lproj */,
+				312FC85C9EBC4011762B21F5F6678E40 /* en.lproj */,
+				562F12E0D5AE5E7C1F66148D30DEFC3E /* es.lproj */,
+				2B842D69096FFA752B38AED545A1E6B9 /* fr.lproj */,
+				0BAA69A4616D834F8C30D4A355B3D322 /* ja.lproj */,
+				2F9D2935B61B50C193088383EAE71AC1 /* ko.lproj */,
+				4BF11BD111AF82A9ADFF937C6B45009A /* pt.lproj */,
+				73720D19565F2427BDF03E95DAB58BA6 /* zh-Hans.lproj */,
+				6403628907ACAE6B38895A3B4CCB1642 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BDB3D5292A5F8922DF14A2CAEB4C96A6 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				81C2CCDABC49AFC3A6D44916276A5DB2 /* NSObject+Event.swift */,
+				B4F7DD20CD4DFBB1B25171128E11352D /* NSObject+KVO.swift */,
+				A3B4619272842214303C91E0EE952731 /* NSObject+Notification.swift */,
+			);
+			name = NSObject;
+			sourceTree = "<group>";
+		};
+		C4F8649CDF12BED66D08B580F5401243 /* YLAppleScript */ = {
+			isa = PBXGroup;
+			children = (
+				0994DE807AA6A89D8C9E36FAB1ECE77F /* YLAppleScript.swift */,
+				DED4357BBA8B34449ABD5F7074A24DE6 /* Resources */,
+			);
+			name = YLAppleScript;
+			sourceTree = "<group>";
+		};
+		CC87D5F7B5A59DA1AD1D7DD3A68683C6 /* YLCategory-Swift-MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				CCB06F0593B9A7A25BF1F8938DD687E0 /* Async */,
+				E16F4299FB3353B36CADED21600784A1 /* NSAlert */,
+				260A9BC936A98B14C8DE362E4E205E75 /* NSButton */,
+				0C3AF7498ADC283728235AD334474F37 /* NSColor */,
+				313EDD0DE2EDF73053F158D00E2BDF75 /* NSControl */,
+				5024FD16265DDD491472FDBD5FF8CFDC /* NSDate */,
+				5E59FE3296DEABABBB17E2561782B69C /* NSImage */,
+				97629CA52A9FFE60D41D577DFAA9A342 /* NSImageView */,
+				BDB3D5292A5F8922DF14A2CAEB4C96A6 /* NSObject */,
+				12B6796736A30EC1372782EAE0D0772B /* NSOpenPanel */,
+				4009D2C5D91B5F37D1B00B7B51DB4F64 /* NSResponder */,
+				D10FF57BC68DCCDA4B813BD868E7FA86 /* NSSavePanel */,
+				1833D4921390776ACC4B9CF66DF8A494 /* NSScreen */,
+				981D06D500284CAD108E8D86E00DD817 /* NSString */,
+				5EDD9E1F3EBF33FFFAE4944B7D2A92E8 /* NSTextField */,
+				E190C0D51EBF6DD0B1E5C152DF5701BC /* NSView */,
+				9E9BF313A9C5B0D04544EC8A81D25B5B /* NSWindow */,
+				9110EF28BE4EC909476979A8546C2312 /* Support Files */,
+				75EDBEA57456FE126FF0A32B50EA0C1E /* YLAppleReview */,
+				C4F8649CDF12BED66D08B580F5401243 /* YLAppleScript */,
+				2463195F92B508070BFFF6CC3167CBDF /* YLAppRating */,
+				99FEB86C4B1A709D560D612120210AD4 /* YLCFNotificationManager */,
+				D10CE14DB0C1074A245444C8411D5E30 /* YLCollectionView */,
+				5DEC51F051F86617354E45D966C37FA1 /* YLControl */,
+				FD9E913332F361681DB344B355921221 /* YLFileAccess */,
+				61CED92AA72C0ED26DE857F4C4BC70E8 /* YLFlipView */,
+				FFB977FDDDE851DEE8CDF1B34ACF156A /* YLHud */,
+				769DE063D19903F05B2794B2D09A38FB /* YLKit */,
+				D0BBB8AD382D239A06C8477D22270AD6 /* YLLanguage */,
+				DDC40DA977B0A925FD3FF3CD3DD20AB3 /* YLPermissionManager */,
+				193FB7B1CF99741B9D4DB91B8DEAED46 /* YLScrollLabel */,
+				ABE5A0DB19B6FA8E09546F5A95BD6662 /* YLShortcutView */,
+				4BCE3E88EA7D713D6B77EBC5E0A22CEC /* YLSystemBeep */,
+				92BB51097A62A9FAB673BD5BACD0AC49 /* YLTextField */,
+				DC754F4D56CB34CAFCFF63F29C8E786E /* YLTipButton */,
+				3BBF58D01E034D30CDD3B20B1BBE448A /* YLUpdateManager */,
+				AF127E2BE3B2E52D1F6D886D4E7FDD1C /* YLUserDefaults */,
+				97623575AFD26E340CD0ECC88EA6BBB1 /* YLWindowButton */,
+			);
+			name = "YLCategory-Swift-MacOS";
+			path = "YLCategory-Swift-MacOS";
+			sourceTree = "<group>";
+		};
+		CCB06F0593B9A7A25BF1F8938DD687E0 /* Async */ = {
+			isa = PBXGroup;
+			children = (
+				72A8622AA025B6F60FBAF8FCC8351454 /* Async.swift */,
+			);
+			name = Async;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				9D5B02589D0023FEA6906FECC35FB9EB /* Pods */,
+				88FF8065951E8D0DB64E052641AE379A /* Products */,
+				53CDF11DE355BA716FC8BB5571416F6F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0BBB8AD382D239A06C8477D22270AD6 /* YLLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				B84BABE0B215A6BE271CB3EE6116FB96 /* YLLanguage.swift */,
+				9FEB7A62690825F021A6A3FDA709F713 /* YLLanguageModel.swift */,
+				1657F93AFC22A4A537EEFA4D918D9B06 /* Resources */,
+			);
+			name = YLLanguage;
+			sourceTree = "<group>";
+		};
+		D10CE14DB0C1074A245444C8411D5E30 /* YLCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0793948B94FAE7D4BE6D8270E6C02EC7 /* YLCollectionView.swift */,
+			);
+			name = YLCollectionView;
+			sourceTree = "<group>";
+		};
+		D10FF57BC68DCCDA4B813BD868E7FA86 /* NSSavePanel */ = {
+			isa = PBXGroup;
+			children = (
+				DCFD4B80EC12FB5E72C2B9B005B2A1F0 /* NSSavePanel+Category.swift */,
+			);
+			name = NSSavePanel;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC754F4D56CB34CAFCFF63F29C8E786E /* YLTipButton */ = {
+			isa = PBXGroup;
+			children = (
+				57EBD6B4C5DDDAF6F38D458A92616616 /* YLTipButton.swift */,
+			);
+			name = YLTipButton;
+			sourceTree = "<group>";
+		};
+		DDC40DA977B0A925FD3FF3CD3DD20AB3 /* YLPermissionManager */ = {
+			isa = PBXGroup;
+			children = (
+				A6CE1911C99D372DF90A7028B2199E7D /* YLPermissionItem.swift */,
+				6ABBA596C01915AF87F801C17FF09D36 /* YLPermissionManager.swift */,
+				E3F8F3374114A5FB8BE2B43AEFE7B6BA /* YLPermissionModel.swift */,
+				BD14EE78BB88F9DAE2DDCC81159BB014 /* YLPermissionViewController.swift */,
+				0C4422E9D18C50B000291C718F79CC5E /* YLPermissionWindowController.swift */,
+				5BB90DF1304252D49D8D4066E23465FA /* Resources */,
+			);
+			name = YLPermissionManager;
+			sourceTree = "<group>";
+		};
+		DED4357BBA8B34449ABD5F7074A24DE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				589207EBDFC657F3E739FF53A464252B /* de.lproj */,
+				E669D0E5F2BB6D43AD9024307779F8A2 /* en.lproj */,
+				4A57A76D54A493ACD2F6EE2A6BA942A2 /* es.lproj */,
+				6A46C614946ABB14494717CF526953DD /* fr.lproj */,
+				7CB72CA926C490A2C4BE1E9B06AEA8E5 /* ja.lproj */,
+				DFCCC95059EA07F7CB150EB4B693EBAC /* ko.lproj */,
+				F0C5A292C20E8C8696532E9C5EDFC218 /* pt.lproj */,
+				BA312715AAFBC060AD202FD2ACEA1B49 /* zh-Hans.lproj */,
+				002BACEC68809D1F041E7C320E653E40 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E16F4299FB3353B36CADED21600784A1 /* NSAlert */ = {
+			isa = PBXGroup;
+			children = (
+				143C4DCDDF1848388B4E283C00825D0D /* NSAlert+Category.swift */,
+			);
+			name = NSAlert;
+			sourceTree = "<group>";
+		};
+		E190C0D51EBF6DD0B1E5C152DF5701BC /* NSView */ = {
+			isa = PBXGroup;
+			children = (
+				B67BDC260A6E48039066EB8106BA3B7C /* NSView+Category.swift */,
+				19811ED1BDAD000C3A29CF27BF27E876 /* NSView+Frame.swift */,
+				16C9A53A433B024E48F01F4B108B178A /* NSView+Gesture.swift */,
+				21AF1660E49D418B06DE4DF199BFE781 /* NSView+SmoothCorner.swift */,
+			);
+			name = NSView;
+			sourceTree = "<group>";
+		};
+		FD9E913332F361681DB344B355921221 /* YLFileAccess */ = {
+			isa = PBXGroup;
+			children = (
+				DE757DDBF526F0675BEB80920F8EADA1 /* YLFileAccess.swift */,
+				B75831AABB854AA440461ABE42CBEA24 /* Resources */,
+			);
+			name = YLFileAccess;
+			sourceTree = "<group>";
+		};
+		FE972539F06BF097DD3057EA7323018B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				196FEFFC55AB74D1559107972FBC7750 /* de.lproj */,
+				B4D966A20ADF23F5F67AD708735B7C69 /* en.lproj */,
+				2E48E2A95738219F258440DC6150F4DE /* es.lproj */,
+				4F15F938523C750B6285125A7FBC131D /* fr.lproj */,
+				C34BFE7FC74BD117FC8AC70D7E262742 /* ja.lproj */,
+				1A8F2069FA5DC000211D2E177BF5DD0F /* ko.lproj */,
+				5D5D55C562BD803E37881471D6F7C05B /* pt.lproj */,
+				2E9DCD05C7CCE786F8F50582C6A8CC70 /* YLShortcutManager.bundle */,
+				FF3D3F9611819D9F7312373028BE4899 /* zh-Hans.lproj */,
+				248C0A7A4166C7D761A5F39CF9254760 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FFB977FDDDE851DEE8CDF1B34ACF156A /* YLHud */ = {
+			isa = PBXGroup;
+			children = (
+				5FE277B9581BF2DB956D5BE89BBF1A42 /* YLHud.swift */,
+				93C4AD5B2FCE7926FD32822086D8B11D /* Resources */,
+			);
+			name = YLHud;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8515E2AF51D5360FD41C1190EF5A7AE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31F0EEA126E61AA027F8051A63E5AE9 /* YLCategory-Swift-MacOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28374883AB98F88B4AB9C9C41E1670B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EA5CD007B41AE6D51C876CC8345141 /* Pods-FileSystem-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		54BDAB4F10F653D5FAA14BB90A3DD795 /* Pods-FileSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB6349C4406421580489340774F05C1 /* Build configuration list for PBXNativeTarget "Pods-FileSystem" */;
+			buildPhases = (
+				E28374883AB98F88B4AB9C9C41E1670B /* Headers */,
+				D18C5FE6B7F4F0B048FAE5C463311923 /* Sources */,
+				745CD5073B0F3D7F9D5B3B414A7321BF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				490B192ED9C7486473FA27C544184DEB /* PBXTargetDependency */,
+			);
+			name = "Pods-FileSystem";
+			productName = "Pods-FileSystem";
+			productReference = DC9A66DA20118A19011243E64875CC4A /* Pods-FileSystem */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F4F0622F1719A278A4FBA6B5C17630D9 /* YLCategory-Swift-MacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F436E837236DF6D3892FFDDB81CEE6F5 /* Build configuration list for PBXNativeTarget "YLCategory-Swift-MacOS" */;
+			buildPhases = (
+				8515E2AF51D5360FD41C1190EF5A7AE2 /* Headers */,
+				31A87AD7F8D10C00E4989099BB5F14A4 /* Sources */,
+				B71334F0388CA52332E7B90E55FE117E /* Frameworks */,
+				A2A654DF638BBE4A263BBFC29465A8EE /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YLCategory-Swift-MacOS";
+			productName = "YLCategory-Swift-MacOS";
+			productReference = 396A6EA1543AAC731042AB7B8F036EC1 /* YLCategory-Swift-MacOS */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+				es,
+				fr,
+				ja,
+				ko,
+				pt,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 88FF8065951E8D0DB64E052641AE379A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54BDAB4F10F653D5FAA14BB90A3DD795 /* Pods-FileSystem */,
+				F4F0622F1719A278A4FBA6B5C17630D9 /* YLCategory-Swift-MacOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2A654DF638BBE4A263BBFC29465A8EE /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/YLCategory_Swift_MacOS/YLCategory-Swift-MacOS.modulemap",
+				"${PODS_ROOT}/Headers/Public/YLCategory_Swift_MacOS/YLCategory-Swift-MacOS-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/YLCategory-Swift-MacOS-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/YLCategory_Swift_MacOS/YLCategory-Swift-MacOS.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/YLCategory_Swift_MacOS/YLCategory-Swift-MacOS-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31A87AD7F8D10C00E4989099BB5F14A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1E9C014C38DDF953BF48CC7FBD3CF2 /* AppEnvironment.swift in Sources */,
+				559E96141FEEE3AB31F006B7CDBF51A1 /* AppInfo.swift in Sources */,
+				081106FF1560EF7B1247632467C2020B /* Async.swift in Sources */,
+				57D7D77A2CE739207E1F62632D37EA9E /* Color.swift in Sources */,
+				8543E10DFCA259582F3B223F31B262E5 /* CoordinateSystem.swift in Sources */,
+				55988691D21E4BC78512A0EE1E94C89F /* Device.swift in Sources */,
+				41B7B2797E8FFC216379D45AC6BA7E3A /* Event.swift in Sources */,
+				EADD8AF3F95F86338BB08E2FEEB7BAF0 /* Extension.swift in Sources */,
+				498ECAA2CE6E834370BA77CFBCA2DD69 /* File.swift in Sources */,
+				779C0F2BC3BC28AD668E5A75EE80964A /* Font.swift in Sources */,
+				0E1FF4707EF9E1C13358F0C5E8DDF649 /* KeyCode.swift in Sources */,
+				A8725B3FFB3A7D8ED70FC6E590699918 /* NSAlert+Category.swift in Sources */,
+				BFB91F688EAF526B4C914F1FA9543F66 /* NSButton+Category.swift in Sources */,
+				CF9933D44443A4F9E07E70A01EF1CD77 /* NSColor+Category.swift in Sources */,
+				0A1D1457DDA78F8EFF4570790A2630D4 /* NSControl+Category.swift in Sources */,
+				E4EA01A84D5C387AF64B3B44843C9E6C /* NSDate+Category.swift in Sources */,
+				2EC1ADD4126D72498CE9EF7FD2A8CDDF /* NSImage+Category.swift in Sources */,
+				01C15588E5F869E65DCAE586C7AFA6F5 /* NSImageView+Category.swift in Sources */,
+				6D060C5B24B9E40A20AB727A223268F9 /* NSObject+Event.swift in Sources */,
+				28EC6C1C5738EEAE5169170BA5702253 /* NSObject+KVO.swift in Sources */,
+				9FD9147D9D7A5D163258C4DC2B2B9118 /* NSObject+Notification.swift in Sources */,
+				C81D1A660427FF8CBF30DB81E22B1204 /* NSOpenPanel+Category.swift in Sources */,
+				457EC9C917D996665B8B603B28191112 /* NSResponder+Category.swift in Sources */,
+				E934D6C53F55F940DCBEE6C9D667A9B8 /* NSSavePanel+Category.swift in Sources */,
+				2109A76B4FE797E261261ABCB861A950 /* NSScreen+Category.swift in Sources */,
+				B741105AD43E7A18365B65F2914EE738 /* NSTextField+Category.swift in Sources */,
+				614A517DF5E5F4BC6DC240FC5FE1809A /* NSView+Category.swift in Sources */,
+				134642C198D5CF4EAC8CA585E8795CF6 /* NSView+Frame.swift in Sources */,
+				D4FFB16E662B3D9383F90CB7537AAD7E /* NSView+Gesture.swift in Sources */,
+				38577C033F40756B2BBA9385CB18A0A9 /* NSView+SmoothCorner.swift in Sources */,
+				2146B2A508CACF73988B6B2AF18F8A3D /* NSWindow+Category.swift in Sources */,
+				C8B928348FDE3276C510B610F146F2E3 /* NSWindow+Frame.swift in Sources */,
+				EA94A39D3232D6960DD7C3074160607D /* OS.swift in Sources */,
+				FC2DA92BA2418431B3ECE866E6A01798 /* Process.swift in Sources */,
+				D14B5D0F4221C14B416BFEF56B88408E /* Screen.swift in Sources */,
+				6299B9C1A19AAD1B46751D46227F07E2 /* String+Category.swift in Sources */,
+				CE2970DEB728D4DFEA2F522754E34A56 /* String+Predicate.swift in Sources */,
+				30E3FCD943892E0F035F26EC912D2636 /* String+Secret.swift in Sources */,
+				A321039120EA858BB7D4687329249BD9 /* YLAppleReview.swift in Sources */,
+				BDC70D4DA856A182B402FB5697CE1075 /* YLAppleScript.swift in Sources */,
+				06BBBB587E979426A033150267B08E05 /* YLAppRating.swift in Sources */,
+				ACB9000DB53933A506A12306ED9DE9F4 /* YLCategory-Swift-MacOS-dummy.m in Sources */,
+				431177104B24E1FEA24317741CA93F5D /* YLCFNotificationCenter.swift in Sources */,
+				FF0D0865E7A1E191F333F627D0EA30EF /* YLCollectionView.swift in Sources */,
+				71FD021AAB42AAB6CF3311EDF42515DF /* YLControl.swift in Sources */,
+				CAED9E7C8FA6728ED41B1045FC65B479 /* YLFileAccess.swift in Sources */,
+				D735A3C81569D70F7B8E05ED90632E58 /* YLFlipView.swift in Sources */,
+				2F59C2CA8E540227D1002AF9C58AEFED /* YLHud.swift in Sources */,
+				9CDFA63EF1D75703FB5991B629E44624 /* YLLanguage.swift in Sources */,
+				6376E7B5740922DED2283420B0090E01 /* YLLanguageModel.swift in Sources */,
+				026E0D20A3AF00A040DE6F73C22B0A6A /* YLLog.swift in Sources */,
+				D7CEF8012E3F417E78F91DF72BE685E3 /* YLPermissionItem.swift in Sources */,
+				0D2C62C5C01248BB6DE87423E3DB9EB0 /* YLPermissionManager.swift in Sources */,
+				BD93F2F40B97666BFC16F18A056E8858 /* YLPermissionModel.swift in Sources */,
+				7A8CE21375D4441BF99D7F06D998DF97 /* YLPermissionViewController.swift in Sources */,
+				1D9F14D5B34ED99DA9709F71BB5862B5 /* YLPermissionWindowController.swift in Sources */,
+				A9D368D38BDF2875B1F2495622591D5B /* YLScrollLabel.swift in Sources */,
+				289630257E1052F44F8F3504EAC8306B /* YLShortcut.swift in Sources */,
+				799D06B2900196DDAA8867B2AAA768BA /* YLShortcutManager.swift in Sources */,
+				5C84072FF4FA24F68E6A76490C0FCF44 /* YLShortcutView.swift in Sources */,
+				C5339055F5B3474A5D4772C1FEDCC7D5 /* YLSystemBeep.swift in Sources */,
+				08CF7B9705ECC464B1F5EBCAFEC3D7FE /* YLTextField.swift in Sources */,
+				2822F15E981E86862A1EE9E0E2895182 /* YLTipButton.swift in Sources */,
+				5DBE90CA9F6B4C97AC4B2B8E43D56B45 /* YLUpdateManager.swift in Sources */,
+				64122B28D9571CFC9ABB703F9A89020D /* YLUpdateViewController.swift in Sources */,
+				062F318877589D014CBE042CD81E223A /* YLUpdateWindowController.swift in Sources */,
+				9C3044680F22D90FCA0E7C087B30E569 /* YLUpdateXMLParserDelegate.swift in Sources */,
+				32E0128A58F589446847E61F9C2E1A6F /* YLUserDefaults.swift in Sources */,
+				90B3AB417FFCD4AE71886E2150164E2F /* YLWindowButton.swift in Sources */,
+				53C9DFEDEB23F0798CF8D7746DF43C21 /* YLWindowOperateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18C5FE6B7F4F0B048FAE5C463311923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC2A3EA7EFE15FE7B6F67DDDE8D83C2 /* Pods-FileSystem-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		490B192ED9C7486473FA27C544184DEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YLCategory-Swift-MacOS";
+			target = F4F0622F1719A278A4FBA6B5C17630D9 /* YLCategory-Swift-MacOS */;
+			targetProxy = C8C405D02A10025B37FAFA2098EF2593 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CD1C5E42283744F836B1AA0F56F35D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2800D41A06933A28805C0DF8A41CCE8 /* Pods-FileSystem.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-FileSystem/Pods-FileSystem.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4422BE41BDFF98942B2827001181F6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87D3DF1185D06E28DFEB999806255FA /* Pods-FileSystem.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-FileSystem/Pods-FileSystem.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		48598B3E4B49C10FF4A34CB106E5514E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 432754971CDF793F014C5733F96189D4 /* YLCategory-Swift-MacOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/YLCategory-Swift-MacOS/YLCategory-Swift-MacOS-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Headers/Public/YLCategory_Swift_MacOS/YLCategory-Swift-MacOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YLCategory_Swift_MacOS;
+				PRODUCT_NAME = "YLCategory-Swift-MacOS";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		82E73717A2562031D5E1F4D85DD1A982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CFE9CB79A885D2E720C4496A20DF8812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3561218E79AF3BD555BA55835B359882 /* YLCategory-Swift-MacOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/YLCategory-Swift-MacOS/YLCategory-Swift-MacOS-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Headers/Public/YLCategory_Swift_MacOS/YLCategory-Swift-MacOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YLCategory_Swift_MacOS;
+				PRODUCT_NAME = "YLCategory-Swift-MacOS";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D39E634FC2CFF97419EB3682DD2807FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39E634FC2CFF97419EB3682DD2807FA /* Debug */,
+				82E73717A2562031D5E1F4D85DD1A982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEB6349C4406421580489340774F05C1 /* Build configuration list for PBXNativeTarget "Pods-FileSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4422BE41BDFF98942B2827001181F6C9 /* Debug */,
+				1CD1C5E42283744F836B1AA0F56F35D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F436E837236DF6D3892FFDDB81CEE6F5 /* Build configuration list for PBXNativeTarget "YLCategory-Swift-MacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48598B3E4B49C10FF4A34CB106E5514E /* Debug */,
+				CFE9CB79A885D2E720C4496A20DF8812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

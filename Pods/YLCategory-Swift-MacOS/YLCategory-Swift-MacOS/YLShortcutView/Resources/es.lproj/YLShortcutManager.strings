@@ -1,0 +1,25 @@
+/* 
+  YLShortcut.strings
+  Test
+
+  Created by 魏宇龙 on 2022/7/8.
+  
+*/
+
+
+"Set shortcut keys" = "Configurar teclas de acceso";
+"Click to edit" = "Haga clic para editar";
+"Enter shortcut keys" = "Introduzca los atajos";
+"Delete shortcut" = "Eliminar acceso directo";
+"End editing" = "Terminar edición";
+"Shortcut has been registered by system" = "El atajo ha sido registrado por el sistema";
+"Control keys are unavailable" = "Las teclas de control no están disponibles";
+
+"Kind tips" = "Consejos Amables";
+"Option Modifier Tips" = "Está usando 'Option +' como un acceso directo, y el sistema requiere permisos de accesibilidad para usarlo";
+"Auth Accessibility" = "Otorgar permisos de accesibilidad";
+"Clear Option Shortcuts" = "Borrar el acceso directo 'Option +'";
+
+"Accessibility Tips" = "Para registrar la tecla Opción como tecla modificadora, se requieren permisos de accesibilidad. Si ya están otorgados, elimínelos y vuelva a agregarlos.";
+"To Authorize" = "Autorizar";
+"Cancel" = "Cancelar";

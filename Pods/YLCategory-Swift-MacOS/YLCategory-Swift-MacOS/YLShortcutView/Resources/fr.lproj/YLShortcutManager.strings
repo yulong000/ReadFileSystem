@@ -1,0 +1,25 @@
+/* 
+  YLShortcut.strings
+  Test
+
+  Created by 魏宇龙 on 2022/7/8.
+  
+*/
+
+
+"Set shortcut keys" = "Définir des raccourcis";
+"Click to edit" = "Cliquez pour modifier";
+"Enter shortcut keys" = "Entrez les raccourcis";
+"Delete shortcut" = "Supprimer le raccourci";
+"End editing" = "Terminer l'édition";
+"Shortcut has been registered by system" = "Le raccourci a été enregistré par le système";
+"Control keys are unavailable" = "Les touches de contrôle ne sont pas disponibles";
+
+"Kind tips" = "Conseils gentils";
+"Option Modifier Tips" = "Vous utilisez 'Option +' comme raccourci, et le système nécessite des autorisations d'accessibilité pour l'utiliser";
+"Auth Accessibility" = "Autoriser les permissions d'accessibilité";
+"Clear Option Shortcuts" = "Effacer le raccourci 'Option +'";
+
+"Accessibility Tips" = "Pour enregistrer la touche Option comme touche de modification, les autorisations d’accessibilité sont requises. Si elles sont déjà accordées, veuillez les supprimer et les ajouter à nouveau.";
+"To Authorize" = "Autoriser";
+"Cancel" = "Annuler";

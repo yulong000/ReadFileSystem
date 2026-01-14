@@ -1,0 +1,93 @@
+PODS:
+  - YLCategory-Swift-MacOS (1.0.7):
+    - YLCategory-Swift-MacOS/Async (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSAlert (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSButton (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSColor (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSControl (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSDate (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSImage (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSImageView (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSObject (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSOpenPanel (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSResponder (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSSavePanel (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSScreen (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSString (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSTextField (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSView (= 1.0.7)
+    - YLCategory-Swift-MacOS/NSWindow (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLAppleReview (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLAppleScript (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLAppRating (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLCFNotificationManager (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLCollectionView (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLControl (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLFileAccess (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLFlipView (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLHud (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLKit (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLLanguage (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLPermissionManager (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLScrollLabel (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLShortcutView (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLSystemBeep (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLTextField (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLTipButton (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLUpdateManager (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLUserDefaults (= 1.0.7)
+    - YLCategory-Swift-MacOS/YLWindowButton (= 1.0.7)
+  - YLCategory-Swift-MacOS/Async (1.0.7)
+  - YLCategory-Swift-MacOS/NSAlert (1.0.7)
+  - YLCategory-Swift-MacOS/NSButton (1.0.7):
+    - YLCategory-Swift-MacOS/NSControl
+  - YLCategory-Swift-MacOS/NSColor (1.0.7)
+  - YLCategory-Swift-MacOS/NSControl (1.0.7)
+  - YLCategory-Swift-MacOS/NSDate (1.0.7)
+  - YLCategory-Swift-MacOS/NSImage (1.0.7)
+  - YLCategory-Swift-MacOS/NSImageView (1.0.7)
+  - YLCategory-Swift-MacOS/NSObject (1.0.7)
+  - YLCategory-Swift-MacOS/NSOpenPanel (1.0.7)
+  - YLCategory-Swift-MacOS/NSResponder (1.0.7)
+  - YLCategory-Swift-MacOS/NSSavePanel (1.0.7)
+  - YLCategory-Swift-MacOS/NSScreen (1.0.7)
+  - YLCategory-Swift-MacOS/NSString (1.0.7)
+  - YLCategory-Swift-MacOS/NSTextField (1.0.7)
+  - YLCategory-Swift-MacOS/NSView (1.0.7)
+  - YLCategory-Swift-MacOS/NSWindow (1.0.7)
+  - YLCategory-Swift-MacOS/YLAppleReview (1.0.7)
+  - YLCategory-Swift-MacOS/YLAppleScript (1.0.7):
+    - YLCategory-Swift-MacOS/YLHud
+  - YLCategory-Swift-MacOS/YLAppRating (1.0.7)
+  - YLCategory-Swift-MacOS/YLCFNotificationManager (1.0.7)
+  - YLCategory-Swift-MacOS/YLCollectionView (1.0.7)
+  - YLCategory-Swift-MacOS/YLControl (1.0.7)
+  - YLCategory-Swift-MacOS/YLFileAccess (1.0.7)
+  - YLCategory-Swift-MacOS/YLFlipView (1.0.7)
+  - YLCategory-Swift-MacOS/YLHud (1.0.7)
+  - YLCategory-Swift-MacOS/YLKit (1.0.7)
+  - YLCategory-Swift-MacOS/YLLanguage (1.0.7)
+  - YLCategory-Swift-MacOS/YLPermissionManager (1.0.7)
+  - YLCategory-Swift-MacOS/YLScrollLabel (1.0.7)
+  - YLCategory-Swift-MacOS/YLShortcutView (1.0.7):
+    - YLCategory-Swift-MacOS/YLHud
+  - YLCategory-Swift-MacOS/YLSystemBeep (1.0.7)
+  - YLCategory-Swift-MacOS/YLTextField (1.0.7)
+  - YLCategory-Swift-MacOS/YLTipButton (1.0.7)
+  - YLCategory-Swift-MacOS/YLUpdateManager (1.0.7)
+  - YLCategory-Swift-MacOS/YLUserDefaults (1.0.7)
+  - YLCategory-Swift-MacOS/YLWindowButton (1.0.7)
+
+DEPENDENCIES:
+  - YLCategory-Swift-MacOS
+
+SPEC REPOS:
+  trunk:
+    - YLCategory-Swift-MacOS
+
+SPEC CHECKSUMS:
+  YLCategory-Swift-MacOS: 0caf068c3423b2dfb94effae43f49aec875a4c14
+
+PODFILE CHECKSUM: 0aa8aac8103f8aabccfd3b8b951449f4de4068f3
+
+COCOAPODS: 1.15.2

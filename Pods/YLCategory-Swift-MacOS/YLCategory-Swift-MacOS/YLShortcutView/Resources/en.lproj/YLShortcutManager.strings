@@ -1,0 +1,25 @@
+/* 
+  YLShortcut.strings
+  Test
+
+  Created by 魏宇龙 on 2022/7/8.
+  
+*/
+
+
+"Set shortcut keys" = "Set shortcut keys";
+"Click to edit" = "Click to edit";
+"Enter shortcut keys" = "Enter shortcut keys";
+"Delete shortcut" = "Delete shortcut";
+"End editing" = "End editing";
+"Shortcut has been registered by system" = "Shortcut has been registered by the system";
+"Control keys are unavailable" = "Control keys are unavailable";
+
+"Kind tips" = "Kind tips";
+"Option Modifier Tips" = "You are using 'Option +' as a shortcut, and the system requires Accessibility permissions to use it";
+"Auth Accessibility" = "Grant Accessibility Permissions";
+"Clear Option Shortcuts" = "Clear 'Option +' Shortcuts";
+
+"Accessibility Tips" = "To register Option as a modifier key, accessibility permissions are required. If permissions are already granted, please remove and re-add them.";
+"To Authorize" = "Authorize";
+"Cancel" = "Cancel";

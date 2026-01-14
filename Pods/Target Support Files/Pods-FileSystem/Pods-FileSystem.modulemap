@@ -1,0 +1,6 @@
+module Pods_FileSystem {
+  umbrella header "Pods-FileSystem-umbrella.h"
+
+  export *
+  module * { export * }
+}
