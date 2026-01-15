@@ -24,6 +24,7 @@ class YLTool {
     
     // MARK: 开始扫描路径
     static func scan(root: String = "/") -> Set<String> {
+        YLLog("开始扫描目录: \(root)")
         var results = Set<String>()
         let fm = FileManager.default
         let rootUrl = root.fileUrl
@@ -45,7 +46,7 @@ class YLTool {
     
     // MARK: 导出数据
     static func export(paths: Set<String>, to url: URL) throws {
-        let path = Path(root: "/", paths: paths.sorted())
+        let path = Path(root: "/", paths: Array(paths))
         let data = try JSONEncoder().encode(path)
         try data.write(to: url)
     }
@@ -58,6 +59,7 @@ class YLTool {
     
     // MARK: 合并树状图
     static func build(from paths: Set<String>) -> DiffNode {
+        YLLog("开始合并成树状图...")
         let root = DiffNode(name: "/")
         
         for path in paths {
@@ -67,7 +69,6 @@ class YLTool {
             for comp in components {
                 if current.children[comp] == nil {
                     current.children[comp] = DiffNode(name: comp)
-                    current.sorted()
                 }
                 current = current.children[comp]!
             }
@@ -78,38 +79,31 @@ class YLTool {
     
     // MARK: 对比不同
     static func diff(a: Set<String>, b: Set<String>) -> DiffNode {
-        let onlyA = a.subtracting(b)
-        let onlyB = b.subtracting(a)
-
-        var root = DiffNode(name: "/")
-
-        for path in onlyA {
-            insert(path: path, into: &root, diff: .onlyInA)
-        }
-        for path in onlyB {
-            insert(path: path, into: &root, diff: .onlyInB)
-        }
-
-        // ⭐ 关键：第二步，统一回溯计算目录 diff
+        
+        let allPaths = a.union(b)
+        let root = build(from: allPaths)
+        
+        markExistence(node: root, currentPath: "", a: a, b: b)
         root.updateDiffFromChildren()
 
         return root
     }
     
-    private static func insert(path: String, into node: inout DiffNode, diff: DiffType) {
-        let components = path.split(separator: "/").map(String.init)
-        var current = node
+    private static func markExistence(node: DiffNode, currentPath: String, a: Set<String>, b: Set<String>) {
+        var fullPath: String
+        if node.name == "/" {
+            fullPath = "/"
+        } else if currentPath == "/" || currentPath.isEmpty {
+            fullPath = "/\(node.name)"
+        } else {
+            fullPath = "\(currentPath)/\(node.name)"
+        }
         
-        for (index, comp) in components.enumerated() {
-            if current.children[comp] == nil {
-                current.children[comp] = DiffNode(name: comp)
-                current.sorted()
-            }
-            if index == components.count - 1 {
-                current.children[comp]?.diff = diff
-                current.sorted()
-            }
-            current = current.children[comp]!
+        node.inA = a.contains(fullPath)
+        node.inB = b.contains(fullPath)
+        
+        for child in node.children.values {
+            markExistence(node: child, currentPath: fullPath, a: a, b: b)
         }
     }
     
@@ -133,6 +127,9 @@ class DiffNode {
     var children: [String: DiffNode] = [:]
     var diff: DiffType = .same
     
+    var inA: Bool = false
+    var inB: Bool = false
+    
     /// 排序后的子节点
     var sortedNodes: [DiffNode] = []
     
@@ -141,17 +138,23 @@ class DiffNode {
         self.diff = diff
     }
     
-    func sorted() {
+    func rebuildSortedNodesIfNeeded() {
+        if sortedNodes.count == children.count {
+            return
+        }
         sortedNodes = children.values.sorted { $0.name < $1.name }
     }
     
     func updateDiffFromChildren() {
         if children.isEmpty {
+            if inA && inB { diff = .same }
+            else if inA { diff = .onlyInA }
+            else if inB { diff = .onlyInB }
             return
         }
 
-        for key in children.keys {
-            children[key]?.updateDiffFromChildren()
+        for child in children.values {
+            child.updateDiffFromChildren()
         }
 
         let childDiffs = Set(children.values.map { $0.diff })

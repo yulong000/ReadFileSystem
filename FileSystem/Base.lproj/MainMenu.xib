@@ -685,12 +685,13 @@
             <point key="canvasLocation" x="200" y="121"/>
         </menu>
         <window title="FileSystem" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="1139" height="749"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1728" height="1084"/>
+            <value key="minSize" type="size" width="800" height="800"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="1140" height="746"/>
+                <rect key="frame" x="0.0" y="0.0" width="1140" height="748"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GNA-2F-dw8">
@@ -712,7 +713,7 @@
                         </buttonCell>
                         <color key="bezelColor" name="AccentColor"/>
                         <connections>
-                            <action selector="importFile:" target="Voe-Tx-rLC" id="hzY-tX-ixc"/>
+                            <action selector="importRight:" target="Voe-Tx-rLC" id="kbU-cj-Apa"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nnq-Bd-jwD">
@@ -737,7 +738,7 @@
                         </connections>
                     </button>
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWd-a3-Bv2">
-                        <rect key="frame" x="30" y="118" width="525" height="560"/>
+                        <rect key="frame" x="30" y="120" width="525" height="560"/>
                         <clipView key="contentView" id="Hh9-bc-mb6">
                             <rect key="frame" x="1" y="1" width="523" height="558"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -803,13 +804,13 @@
                         </scroller>
                     </scrollView>
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dze-qg-jHE">
-                        <rect key="frame" x="585" y="120" width="525" height="556"/>
+                        <rect key="frame" x="585" y="120" width="525" height="560"/>
                         <clipView key="contentView" id="Fvd-mz-UgX">
-                            <rect key="frame" x="1" y="1" width="523" height="554"/>
+                            <rect key="frame" x="1" y="1" width="523" height="558"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="52" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="13" outlineTableColumn="SY0-4L-AOl" id="53I-AS-Tpz">
-                                    <rect key="frame" x="0.0" y="0.0" width="523" height="554"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="523" height="558"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="17" height="0.0"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -869,15 +870,15 @@
                         </scroller>
                     </scrollView>
                     <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7cm-q8-MTN">
-                        <rect key="frame" x="28" y="703" width="108" height="13"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="当前系统文件列表" id="MfL-9k-rVs">
+                        <rect key="frame" x="28" y="700" width="121" height="13"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="当前系统的文件列表" id="MfL-9k-rVs">
                             <font key="font" size="13" name=".PingFangUITextSC-Regular"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="HEy-Kd-Pca">
-                        <rect key="frame" x="583" y="703" width="95" height="13"/>
+                        <rect key="frame" x="583" y="700" width="95" height="13"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="导入的文件列表" id="U2q-zk-AQz">
                             <font key="font" size="13" name=".PingFangUITextSC-Regular"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -920,20 +921,31 @@
                             <constraint firstAttribute="width" constant="280" id="va3-B7-g2F"/>
                         </constraints>
                     </customView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rLh-Vh-MSx">
+                        <rect key="frame" x="159" y="20" width="76" height="24"/>
+                        <buttonCell key="cell" type="push" title="导入文档" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Qb2-e5-c0d">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name=".PingFangUITextSC-Regular"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="importLeft:" target="Voe-Tx-rLC" id="aNW-Hj-VaC"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="nnq-Bd-jwD" secondAttribute="bottom" constant="20" id="0ED-y5-24t"/>
-                    <constraint firstItem="GNA-2F-dw8" firstAttribute="top" secondItem="cWd-a3-Bv2" secondAttribute="bottom" constant="30" id="2MT-81-rcq"/>
-                    <constraint firstItem="7cm-q8-MTN" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="30" id="3bL-uk-LNE"/>
-                    <constraint firstItem="Dze-qg-jHE" firstAttribute="top" secondItem="HEy-Kd-Pca" secondAttribute="bottom" constant="27" id="3kf-KG-e9B"/>
+                    <constraint firstItem="GNA-2F-dw8" firstAttribute="top" secondItem="cWd-a3-Bv2" secondAttribute="bottom" constant="32" id="2MT-81-rcq"/>
+                    <constraint firstItem="7cm-q8-MTN" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="35" id="3bL-uk-LNE"/>
+                    <constraint firstItem="Dze-qg-jHE" firstAttribute="top" secondItem="HEy-Kd-Pca" secondAttribute="bottom" constant="20" id="3kf-KG-e9B"/>
                     <constraint firstItem="cxx-mk-Uwp" firstAttribute="top" secondItem="Dze-qg-jHE" secondAttribute="bottom" constant="32" id="CPb-nE-DuT"/>
                     <constraint firstItem="cxx-mk-Uwp" firstAttribute="centerX" secondItem="Dze-qg-jHE" secondAttribute="centerX" id="Da8-Py-ggB"/>
                     <constraint firstItem="nnq-Bd-jwD" firstAttribute="top" secondItem="vbP-0g-Zsi" secondAttribute="bottom" constant="10" id="FjV-aU-YOJ"/>
                     <constraint firstItem="nnq-Bd-jwD" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="IdR-6I-EOl"/>
                     <constraint firstItem="7cm-q8-MTN" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="30" id="LVQ-dP-8hn"/>
-                    <constraint firstItem="cWd-a3-Bv2" firstAttribute="top" secondItem="7cm-q8-MTN" secondAttribute="bottom" constant="25" id="P7W-dz-rug"/>
+                    <constraint firstItem="cWd-a3-Bv2" firstAttribute="top" secondItem="7cm-q8-MTN" secondAttribute="bottom" constant="20" id="P7W-dz-rug"/>
                     <constraint firstItem="GNA-2F-dw8" firstAttribute="centerX" secondItem="cWd-a3-Bv2" secondAttribute="centerX" id="Rgz-G4-WPI"/>
                     <constraint firstItem="cWd-a3-Bv2" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="30" id="XUU-NZ-Hr8"/>
+                    <constraint firstItem="Rwd-Um-N75" firstAttribute="leading" secondItem="rLh-Vh-MSx" secondAttribute="trailing" constant="20" id="Zv0-Zu-wGg"/>
                     <constraint firstItem="Dze-qg-jHE" firstAttribute="leading" secondItem="HEy-Kd-Pca" secondAttribute="leading" id="c97-LI-a9d"/>
                     <constraint firstItem="Dze-qg-jHE" firstAttribute="width" secondItem="cWd-a3-Bv2" secondAttribute="width" id="epy-Bs-pDc"/>
                     <constraint firstItem="cxx-mk-Uwp" firstAttribute="centerY" secondItem="GNA-2F-dw8" secondAttribute="centerY" id="g7q-qG-Ria"/>
@@ -943,7 +955,8 @@
                     <constraint firstItem="nnq-Bd-jwD" firstAttribute="centerX" secondItem="vbP-0g-Zsi" secondAttribute="centerX" id="r4j-Dh-DzS"/>
                     <constraint firstItem="Dze-qg-jHE" firstAttribute="height" secondItem="cWd-a3-Bv2" secondAttribute="height" id="sYh-QB-ltM"/>
                     <constraint firstItem="Rwd-Um-N75" firstAttribute="top" secondItem="GNA-2F-dw8" secondAttribute="bottom" constant="20" id="uQ4-2Q-UhO"/>
-                    <constraint firstItem="HEy-Kd-Pca" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="30" id="vEv-jI-YzZ"/>
+                    <constraint firstItem="HEy-Kd-Pca" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="35" id="vEv-jI-YzZ"/>
+                    <constraint firstItem="Rwd-Um-N75" firstAttribute="centerY" secondItem="rLh-Vh-MSx" secondAttribute="centerY" id="w3a-cT-l6F"/>
                     <constraint firstItem="Dze-qg-jHE" firstAttribute="centerY" secondItem="cWd-a3-Bv2" secondAttribute="centerY" id="xq1-qB-sM0"/>
                     <constraint firstAttribute="bottom" secondItem="Rwd-Um-N75" secondAttribute="bottom" constant="20" id="z7n-wt-mz5"/>
                 </constraints>

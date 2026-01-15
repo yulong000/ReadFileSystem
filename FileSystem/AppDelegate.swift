@@ -34,6 +34,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    // MARK: 导入左侧
+    @IBAction func importLeft(_ sender: NSButton) {
+        NSOpenPanel.open(title: "导入", message: "导入当前的目录结构", canChooseFiles: true, canChooseDirectories: false) { [self] resp, urls in
+            guard resp == .OK, let url = urls?.first else { return }
+            YLHud.showLoading("导入中...", to: window)
+            Async.global { [self] in
+                guard let path = try? YLTool.load(from: url) else {
+                    Async.main { [self] in
+                        YLHud.hideHUDForWindow(window)
+                        YLHud.showSuccess("导入失败!", to: window)
+                    }
+                    return
+                }
+                currentPaths = Set(path.paths)
+                currentRootNode = YLTool.build(from: currentPaths ?? Set())
+                Async.main { [self] in
+                    YLHud.hideHUDForWindow(window)
+                    leftOutlineView.reloadData()
+                    YLHud.showSuccess("导入成功!", to: window)
+                }
+            }
+        }
+    }
+    
     // MARK: 导出
     @IBAction func export(_ sender: NSButton) {
         guard let currentPath = currentPaths else {
@@ -43,13 +67,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         NSOpenPanel.open(title: "导出", message: "导出目录结构到本地", canChooseFiles: false, canChooseDirectories: true) { [self] resp, urls in
             guard resp == .OK, let url = urls?.first else { return }
-            do {
-                let fileUrl = url.appendingPathComponent("DiskFileTree.json")
-                try YLTool.export(paths: currentPath, to: fileUrl)
+            let fileUrl = url.appendingPathComponent("DiskFileTree.json")
+            YLHud.showLoading("正在导出...", to: window)
+            Async.global { [self] in
+                do {
+                    try YLTool.export(paths: currentPath, to: fileUrl)
+                } catch {
+                    Async.main { [self] in
+                        YLHud.hideHUDForWindow(window)
+                        YLHud.showSuccess("导出失败!", to: window)
+                    }
+                    YLLog("导出失败：\(error)")
+                }
+            } main: { [self] in
+                YLHud.hideHUDForWindow(window)
                 YLHud.showSuccess("导出成功!", to: window)
-            } catch {
-                YLHud.showSuccess("导出失败!", to: window)
-                YLLog("导出失败：\(error)")
             }
         }
     }
@@ -60,30 +92,38 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             YLHud.showError("两侧内容均不能为空", to: window)
             return
         }
-        currentRootNode = YLTool.diff(a: currentPaths, b: otherPaths)
-        otherRootNode = YLTool.diff(a: otherPaths, b: currentPaths)
-        leftOutlineView.reloadData()
-        rightOutlinView.reloadData()
+        YLHud.showLoading("对比中...", to: window)
+        Async.global { [self] in
+            currentRootNode = YLTool.diff(a: currentPaths, b: otherPaths)
+            otherRootNode = YLTool.diff(a: otherPaths, b: currentPaths)
+        } main: { [self] in
+            YLHud.hideHUDForWindow(window)
+            YLHud.showSuccess("对比结束", to: window)
+            leftOutlineView.reloadData()
+            rightOutlinView.reloadData()
+        }
     }
     
-    // MARK: 导入
-    @IBAction func importFile(_ sender: NSButton) {
+    // MARK: 导入右侧
+    @IBAction func importRight(_ sender: NSButton) {
         NSOpenPanel.open(title: "导入", message: "导入其他的目录结构", canChooseFiles: true, canChooseDirectories: false) { [self] resp, urls in
             guard resp == .OK, let url = urls?.first else { return }
-            do {
-                let path = try YLTool.load(from: url)
+            YLHud.showLoading("导入中...", to: window)
+            Async.global { [self] in
+                guard let path = try? YLTool.load(from: url) else {
+                    Async.main { [self] in
+                        YLHud.hideHUDForWindow(window)
+                        YLHud.showSuccess("导入失败!", to: window)
+                    }
+                    return
+                }
                 otherPaths = Set(path.paths)
-                YLHud.showLoading("导入中...", to: window)
-                Async.global { [self] in
-                    otherRootNode = YLTool.build(from: otherPaths ?? Set())
-                } main: { [self] in
+                otherRootNode = YLTool.build(from: otherPaths ?? Set())
+                Async.main { [self] in
                     YLHud.hideHUDForWindow(window)
                     rightOutlinView.reloadData()
                     YLHud.showSuccess("导入成功!", to: window)
                 }
-            } catch {
-                YLHud.showSuccess("导入失败!", to: window)
-                YLLog("导入失败：\(error)")
             }
         }
     }
@@ -99,6 +139,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
+    }
+    
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        true
     }
 
 
@@ -119,9 +163,11 @@ extension AppDelegate: NSOutlineViewDelegate, NSOutlineViewDataSource {
     func outlineView(_ outlineView: NSOutlineView, child index: Int, ofItem item: Any?) -> Any {
         if outlineView == leftOutlineView {
             guard let node = item as? DiffNode else { return currentRootNode }
+            node.rebuildSortedNodesIfNeeded()
             return node.sortedNodes[index]
         } else {
             guard let node = item as? DiffNode else { return otherRootNode }
+            node.rebuildSortedNodesIfNeeded()
             return node.sortedNodes[index]
         }
     }
@@ -149,6 +195,7 @@ class RowView: YLFlipView {
     var model: DiffNode? {
         didSet {
             titleLabel.stringValue = model?.name ?? ""
+            needsLayout = true
             guard let diff = model?.diff else {
                 titleLabel.textColor = .textColor
                 return
@@ -186,7 +233,8 @@ class RowView: YLFlipView {
     
     override func layout() {
         super.layout()
-        titleLabel.sizeIs(width, 22).centerEqualToSuper()
+        titleLabel.sizeToFit()
+        titleLabel.width(is: width).centerEqualToSuper()
     }
     
     // MARK: - UI组件
