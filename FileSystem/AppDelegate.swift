@@ -15,6 +15,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var leftOutlineView: NSOutlineView!
     @IBOutlet var rightOutlinView: NSOutlineView!
     
+    @IBOutlet var leftFileLabel: NSTextField!
+    @IBOutlet var rightFileLabel: NSTextField!
+    
     var currentPaths: Set<String>?
     var otherPaths: Set<String>?
     
@@ -52,6 +55,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 Async.main { [self] in
                     YLHud.hideHUDForWindow(window)
                     leftOutlineView.reloadData()
+                    leftFileLabel.stringValue = url.path.lastPathComponent
                     YLHud.showSuccess("导入成功!", to: window)
                 }
             }
@@ -122,6 +126,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 Async.main { [self] in
                     YLHud.hideHUDForWindow(window)
                     rightOutlinView.reloadData()
+                    rightFileLabel.stringValue = url.path.lastPathComponent
                     YLHud.showSuccess("导入成功!", to: window)
                 }
             }
