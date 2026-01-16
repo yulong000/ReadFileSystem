@@ -60,15 +60,21 @@ class YLTool {
     // MARK: 合并树状图
     static func build(from paths: Set<String>) -> DiffNode {
         YLLog("开始合并成树状图...")
-        let root = DiffNode(name: "/")
+        let root = DiffNode(name: "/", path: "/")
         
         for path in paths {
             let components = path.split(separator: "/").map(String.init)
             var current = root
+            var currentPath = ""
             
             for comp in components {
+                if currentPath.isEmpty {
+                    currentPath = "/\(comp)"
+                } else {
+                    currentPath += "/\(comp)"
+                }
                 if current.children[comp] == nil {
-                    current.children[comp] = DiffNode(name: comp)
+                    current.children[comp] = DiffNode(name: comp, path: currentPath)
                 }
                 current = current.children[comp]!
             }
@@ -90,20 +96,11 @@ class YLTool {
     }
     
     private static func markExistence(node: DiffNode, currentPath: String, a: Set<String>, b: Set<String>) {
-        var fullPath: String
-        if node.name == "/" {
-            fullPath = "/"
-        } else if currentPath == "/" || currentPath.isEmpty {
-            fullPath = "/\(node.name)"
-        } else {
-            fullPath = "\(currentPath)/\(node.name)"
-        }
-        
-        node.inA = a.contains(fullPath)
-        node.inB = b.contains(fullPath)
+        node.inA = a.contains(node.path)
+        node.inB = b.contains(node.path)
         
         for child in node.children.values {
-            markExistence(node: child, currentPath: fullPath, a: a, b: b)
+            markExistence(node: child, currentPath: node.path, a: a, b: b)
         }
     }
     
@@ -124,6 +121,7 @@ enum DiffType {
 
 class DiffNode {
     let name: String
+    let path: String
     var children: [String: DiffNode] = [:]
     var diff: DiffType = .same
     
@@ -133,8 +131,9 @@ class DiffNode {
     /// 排序后的子节点
     var sortedNodes: [DiffNode] = []
     
-    init(name: String, diff: DiffType = .same) {
+    init(name: String, path: String, diff: DiffType = .same) {
         self.name = name
+        self.path = path
         self.diff = diff
     }
     

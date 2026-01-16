@@ -21,8 +21,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var currentPaths: Set<String>?
     var otherPaths: Set<String>?
     
-    var currentRootNode: DiffNode = DiffNode(name: "/")
-    var otherRootNode: DiffNode = DiffNode(name: "/")
+    var currentRootNode: DiffNode = DiffNode(name: "/", path: "/")
+    var otherRootNode: DiffNode = DiffNode(name: "/", path: "/")
     
     // MARK: 开始解析
     @IBAction func beginParser(_ sender: NSButton) {
@@ -133,9 +133,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    @objc func doubleClickLeft() {
+        let row = leftOutlineView.clickedRow
+        if row >= 0 {
+            guard let node = leftOutlineView.item(atRow: row) as? DiffNode else { return }
+            NSWorkspace.shared.activateFileViewerSelecting([node.path.fileUrl])
+        }
+    }
+    
+    @objc func doubleClickRight() {
+        let row = rightOutlinView.clickedRow
+        if row >= 0 {
+            guard let node = leftOutlineView.item(atRow: row) as? DiffNode else { return }
+            NSWorkspace.shared.activateFileViewerSelecting([node.path.fileUrl])
+        }
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        
+        leftOutlineView.doubleAction = #selector(doubleClickLeft)
+        rightOutlinView.doubleAction = #selector(doubleClickRight)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
