@@ -29,7 +29,7 @@ class YLTool {
         let fm = FileManager.default
         let rootUrl = root.fileUrl
         
-        guard let enumerator = fm.enumerator(at: rootUrl, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles]) else {
+        guard let enumerator = fm.enumerator(at: rootUrl, includingPropertiesForKeys: nil, options: []) else {
             return results
         }
         
